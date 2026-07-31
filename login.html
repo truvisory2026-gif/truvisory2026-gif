@@ -107,32 +107,31 @@
 </script>
 
 <script>
-    // Hide password field as we are using OTP
-    document.querySelector('#passwordInput').closest('.form-group').style.display = 'none';
-    document.getElementById('loginBtn').innerText = 'Send OTP';
-
     document.getElementById('loginBtn').addEventListener('click', async function() {
         var email = document.getElementById('emailInput').value;
-        if(email) {
+        var password = document.getElementById('passwordInput').value;
+        
+        if(email && password) {
             this.innerHTML = "Processing...";
             this.disabled = true;
 
-            const { data, error } = await supabase.auth.signInWithOtp({
+            const { data, error } = await supabase.auth.signInWithPassword({
                 email: email,
+                password: password,
             });
             
-            this.innerHTML = "Send OTP";
+            this.innerHTML = "Login";
             this.disabled = false;
 
             if (error) {
                 alert("Error: " + error.message);
             } else {
-                localStorage.setItem('authEmail', email);
-                alert("OTP sent! Redirecting to verify your email...");
-                window.location.href = 'verify-otp.html';
+                localStorage.setItem('isLoggedIn', 'true');
+                alert("Login successful!");
+                window.location.href = 'dashboard.html';
             }
         } else {
-            alert("Please enter your email address.");
+            alert("Please enter both email and password.");
         }
     });
 </script>

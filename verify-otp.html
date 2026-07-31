@@ -107,7 +107,7 @@
             const { data, error } = await supabase.auth.verifyOtp({
                 email: email,
                 token: otp,
-                type: 'email'
+                type: 'signup'
             });
             
             this.innerHTML = "Verify & Login";
@@ -117,7 +117,7 @@
                 alert("Error: " + error.message);
             } else {
                 // OTP verified successfully
-                const user = data.user;
+                const user = data.user || (data.session && data.session.user);
                 
                 // Attempt to insert profile data if it exists in localStorage
                 const firstName = localStorage.getItem('signup_firstName');
@@ -125,7 +125,7 @@
                 const company = localStorage.getItem('signup_company');
                 const phone = localStorage.getItem('signup_phone');
                 
-                if (firstName && lastName) {
+                if (user && firstName && lastName) {
                     const { error: profileError } = await supabase
                         .from('profiles')
                         .insert([
@@ -140,7 +140,6 @@
                         
                     if (profileError) {
                         console.error("Profile insert error:", profileError);
-                        // If error implies duplicate, we ignore as they might be logging in again
                     }
                     
                     // Clear local storage

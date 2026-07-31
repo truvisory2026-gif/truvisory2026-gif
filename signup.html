@@ -127,13 +127,15 @@
         var lastName = document.querySelector('input[placeholder="Doe"]').value;
         var companyName = document.querySelector('input[placeholder="e.g. Acme Corp"]').value;
         var phone = document.querySelector('input[placeholder="+91 98765 43210"]').value;
+        var password = document.querySelector('input[type="password"]').value;
         
-        if(email && firstName && lastName) {
+        if(email && firstName && lastName && password) {
             this.innerHTML = "Processing...";
             this.disabled = true;
             
-            const { data, error } = await supabase.auth.signInWithOtp({
+            const { data, error } = await supabase.auth.signUp({
                 email: email,
+                password: password,
             });
             
             this.innerHTML = "Sign Up";
@@ -147,11 +149,11 @@
                 localStorage.setItem('signup_lastName', lastName);
                 localStorage.setItem('signup_company', companyName);
                 localStorage.setItem('signup_phone', phone);
-                alert("OTP sent! Redirecting to verify your email...");
+                alert("Account created! Redirecting to verify your email...");
                 window.location.href = 'verify-otp.html';
             }
         } else {
-            alert("Please fill in at least First Name, Last Name, and Email.");
+            alert("Please fill in First Name, Last Name, Email, and Password.");
         }
     });
 </script>
