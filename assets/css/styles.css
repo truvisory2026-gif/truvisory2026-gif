@@ -308,16 +308,14 @@ a {
 }
 
 .future-expansion {
-  margin-top: 3rem;
+  margin: 3rem auto 0;
   text-align: center;
   padding: 1.5rem;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   border-radius: 50px;
-  display: inline-block;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
+  display: block;
+  max-width: fit-content;
 }
 
 .future-expansion p {
