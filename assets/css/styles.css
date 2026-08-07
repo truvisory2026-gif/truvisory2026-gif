@@ -762,8 +762,7 @@ img, video, canvas, svg {
 
 @media (max-width: 768px) {
     .logo img {
-        max-width: 180px !important;
-        height: auto !important;
+        max-width: none !important;
     }
     .nav-container {
         height: auto !important;

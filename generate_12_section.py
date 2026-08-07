@@ -1,31 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="End-to-end business consulting firm helping startups and growing businesses with company incorporation, accounting, taxation, payroll, compliance, branding and international business expansion.">
-  <title>Truvisory Financial Services Pvt. Ltd. | Business Setup, Accounting, Compliance & Global Expansion</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/css/booking.css">
-  <link rel="stylesheet" href="assets/css/mega-menu.css">
-</head>
+import re
+
+def rewrite_index_html():
+    file_path = 'c:\\Users\\roopc\\OneDrive\\Desktop\\truvisory\\index.html'
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # We will preserve the <head> block
+    head_end = content.find('</head>') + len('</head>')
+    head_part = content[:head_end]
+
+    scripts_start = content.find('<!-- Calendly widget scripts -->')
+    if scripts_start != -1:
+        scripts_part = content[scripts_start:]
+    else:
+        scripts_part = """
+  <!-- Calendly widget scripts -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script src="script.js"></script>
+</body>
+</html>
+"""
+
+    new_body = """
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container header-container">
-      <a href="index.html" class="logo" style="display: flex; align-items: center;">
-        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 200px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 60px;">
       </a>
       
       <nav class="desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="why-truvisory.html">Why Truvisory</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="contact.html" class="nav-cta">Book a Free Consultation</a>
+        <a href="#home">Home</a>
+        <a href="#why-truvisory">About Us</a>
+        <a href="#solutions">Services</a>
+        <a href="#why-choose">Why Truvisory</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#cta">Contact Us</a>
+        <a href="#cta" class="nav-cta">Book a Free Consultation</a>
       </nav>
 
       <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="menu-toggle">
@@ -38,19 +51,19 @@
   <div class="mobile-drawer" id="mobile-drawer">
     <div class="drawer-header">
       <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 50px;">
       </a>
       <button class="close-menu" id="close-menu">&times;</button>
     </div>
     <div class="drawer-content">
       <div class="drawer-links">
-        <a href="index.html" class="drawer-link">Home</a>
-        <a href="about.html" class="drawer-link">About Us</a>
-        <a href="services.html" class="drawer-link">Services</a>
-        <a href="why-truvisory.html" class="drawer-link">Why Truvisory</a>
-        <a href="testimonials.html" class="drawer-link">Testimonials</a>
-        <a href="contact.html" class="drawer-link">Contact Us</a>
-        <a href="contact.html" class="btn btn-primary w-100 text-center mt-4">Book a Free Consultation</a>
+        <a href="#home" class="drawer-link">Home</a>
+        <a href="#why-truvisory" class="drawer-link">About Us</a>
+        <a href="#solutions" class="drawer-link">Services</a>
+        <a href="#why-choose" class="drawer-link">Why Truvisory</a>
+        <a href="#testimonials" class="drawer-link">Testimonials</a>
+        <a href="#cta" class="drawer-link">Contact Us</a>
+        <a href="#cta" class="btn btn-primary w-100 text-center mt-4">Book a Free Consultation</a>
       </div>
       <div class="drawer-subcategories text-center mt-4">
         <a href="tel:+919930426774" class="link-navy d-block mb-2">📞 +91 99304 26774</a>
@@ -65,20 +78,17 @@
     <div class="container">
       <div class="grid hero-grid align-center">
         <div class="hero-content fade-up">
-          <h1 class="main-title text-navy">Helping Businesses Build, Grow &amp; Expand Beyond Borders</h1>
-          <p class="mb-3" style="color: var(--text-slate); font-family: var(--font-sans); line-height: 1.6;">Truvisory Financial Services Pvt. Ltd. is a business consulting and financial advisory firm that helps entrepreneurs, startups, SMEs and established businesses set up, manage and grow with confidence.<br><br>We bring incorporation, accounting, taxation, compliance, payroll and business advisory together under one roof, backed by a team of Chartered Accountants and experienced business professionals. From your first company registration to your expansion into international markets such as the UAE, Singapore, UK, Hong Kong and the USA, we work as a single, accountable partner rather than a fragmented set of vendors.<br><br>Founded in 2024, Truvisory is built on the belief that every business deserves advice that is honest, practical and genuinely suited to its goals.</p>
+          <h1 class="main-title text-navy">Navigating Complexity. Driving Corporate Growth.</h1>
+          <h3 class="category-tagline mb-3" style="color: var(--text-slate); font-family: var(--font-sans); text-transform: none; letter-spacing: normal;">Financial and Advisory Solutions for New Businesses, SMEs and Global Expansions</h3>
           <div class="hero-ctas mt-4 mb-4">
-            <a href="contact.html" class="btn btn-primary cta-btn mr-3">Book a Free Business Consultation</a>
-            <a href="services.html" class="btn btn-outline cta-btn">Explore Our Services</a>
+            <a href="#cta" class="btn btn-primary cta-btn mr-3">Start Your Journey With Truvisory</a>
+            <a href="#solutions" class="btn btn-outline cta-btn">Explore Business Solutions</a>
           </div>
-          <div class="trust-indicators" style="border-top: 1px solid var(--border-light); padding-top: 15px;">
-            <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 15px; font-size: 0.85rem; color: var(--text-slate);">
-              <li>✓ Chartered Accountant-Led Advisory Team</li>
-              <li>✓ Founded in 2024</li>
-              <li>✓ Active Presence Across 6 Countries</li>
-              <li>✓ End-to-End Support</li>
-              <li>✓ Direct Access to Your Advisor</li>
-            </ul>
+          <div class="trust-indicators">
+            <h4 class="text-navy mb-2" style="font-size: 1.1rem;">Trusted Expertise In:</h4>
+            <span class="trust-item mb-2 d-block">✓ Over $500M in Client Revenue Optimized</span>
+            <span class="trust-item mb-2 d-block">✓ 15+ Years Cross-Border Expertise</span>
+            <span class="trust-item mb-2 d-block">✓ 100% Audit & Statutory Compliance Rate</span>
           </div>
           <!-- Developer Notes: Consider injecting dynamic counter elements here -->
         </div>
@@ -94,17 +104,16 @@
     <div class="container">
       <div class="grid grid-2-col align-center">
         <div class="story-content fade-up">
-          <h2 class="section-title">Why Truvisory</h2>
-          <p class="mb-3">The name Truvisory is inspired by one simple belief — every business deserves true advisory.</p>
-          <p class="mb-3">We are committed to providing honest, transparent and practical guidance that helps entrepreneurs make informed business decisions. Rather than offering isolated services, we understand your business objectives and recommend integrated solutions that support long-term growth.</p>
-          <p class="mb-3">Whether you are launching your first startup, restructuring an existing business or expanding internationally, Truvisory becomes your long-term business partner.</p>
-          <h4 class="text-navy mb-2 mt-4">Why Choose Truvisory?</h4>
-          <p class="mb-2"><strong>End-to-End Business Solutions:</strong> From incorporation and accounting to taxation, compliance, payroll, trademark, branding, website development and digital marketing, everything is available under one roof.</p>
-          <p class="mb-2"><strong>Business Expansion Experts:</strong> We assist businesses planning to establish operations across India, UAE, Singapore, UK, Hong Kong and the USA.</p>
-          <p class="mb-2"><strong>Chartered Accountant-Led Team:</strong> Our experienced professionals combine financial expertise with strategic business consulting.</p>
-          <p class="mb-2"><strong>A Founder Who Understands Business, Not Just Numbers:</strong> Truvisory was founded by Nivya Jain, who brings hands-on corporate marketing experience from her time with organisations including Thomas Cook and Citibank. That perspective shapes how we advise clients — with equal attention to compliance and to commercial growth.</p>
-          <p class="mb-2"><strong>Client-First Approach:</strong> Every recommendation is based on your business goals, not a one-size-fits-all approach.</p>
-          <p class="mb-3"><strong>Long-Term Partnership:</strong> We aim to build lasting relationships and become the trusted advisor businesses recommend to others.</p>
+          <h2 class="section-title">Why Truvisory Exists</h2>
+          <h4 class="text-navy mb-2">Our Brand Story</h4>
+          <p class="mb-3">In an increasingly complex global economy, ambitious enterprises often find their growth stifled by fragmented regulatory frameworks and disjointed financial advice. We identified a critical gap: businesses needed a unified, top-tier partner capable of delivering both strategic foresight and meticulous compliance.</p>
+          <h4 class="text-navy mb-2 mt-4">Why the Name "Truvisory"?</h4>
+          <p class="mb-3">Founded by a coalition of veteran financial experts, Truvisory was established to bridge this gap. Our name is a synthesis of <strong>True</strong> and <strong>Advisory</strong>. It encapsulates our foundational pledge: to provide transparent, unvarnished truth paired with actionable, elite advisory services.</p>
+          <h4 class="text-navy mb-2 mt-4">Mission & Vision</h4>
+          <p class="mb-3"><strong>Mission:</strong> To engineer financial architecture that empowers visionary companies to scale globally without friction.</p>
+          <p class="mb-3"><strong>Vision:</strong> To be the undisputed global standard for integrated corporate financial and compliance advisory.</p>
+          <h4 class="text-navy mb-2 mt-4">Core Values</h4>
+          <p class="mb-3">Uncompromising Integrity, Precision Execution, Strategic Foresight, and Client-Centric Innovation.</p>
         </div>
         <div class="quote-box-container fade-left">
           <div class="quote-box form-card" style="background: white;">
@@ -126,44 +135,66 @@
       
       <div class="timeline-container mt-4">
         <div class="timeline">
+          
           <div class="timeline-item left fade-up">
             <div class="timeline-content card" style="background: #F8FAFC; border: none;">
-              <h3 class="text-navy">1. Free Consultation</h3>
-              <p>Understanding your business goals and current stage.</p>
+              <h3 class="text-navy">1. Business Idea & Planning</h3>
+              <p>We rigorously stress-test your financial models and determine the most tax-efficient entity structure before you launch, mitigating early-stage risk.</p>
             </div>
           </div>
+          
           <div class="timeline-item right fade-up">
             <div class="timeline-content card" style="background: #F8FAFC; border: none;">
-              <h3 class="text-navy">2. Planning & Structuring</h3>
-              <p>Recommending the right entity type and jurisdiction.</p>
+              <h3 class="text-navy">2. Company Incorporation</h3>
+              <p>Flawless execution of Private Limited, LLP, or foreign subsidiary incorporation, establishing a rock-solid legal foundation.</p>
             </div>
           </div>
+          
           <div class="timeline-item left fade-up">
             <div class="timeline-content card" style="background: #F8FAFC; border: none;">
-              <h3 class="text-navy">3. Documentation & Incorporation</h3>
-              <p>Managing paperwork, filings and registrations.</p>
+              <h3 class="text-navy">3. Accounting & Taxation</h3>
+              <p>Implementation of enterprise-grade cloud accounting systems and rigorous tax optimization frameworks.</p>
             </div>
           </div>
+          
           <div class="timeline-item right fade-up">
             <div class="timeline-content card" style="background: #F8FAFC; border: none;">
-              <h3 class="text-navy">4. Banking & Tax Setup</h3>
-              <p>Bank account facilitation and tax registrations.</p>
+              <h3 class="text-navy">4. Payroll & Compliance</h3>
+              <p>Confidential, automated payroll processing and continuous regulatory compliance management.</p>
             </div>
           </div>
+          
           <div class="timeline-item left fade-up">
             <div class="timeline-content card" style="background: #F8FAFC; border: none;">
-              <h3 class="text-navy">5. Ongoing Compliance & Accounting</h3>
-              <p>Keeping the business audit-ready year-round.</p>
+              <h3 class="text-navy">5. Trademark & Legal</h3>
+              <p>Securing your intellectual property assets globally, ensuring your brand equity is legally defensible.</p>
             </div>
           </div>
+
           <div class="timeline-item right fade-up">
             <div class="timeline-content card" style="background: #F8FAFC; border: none;">
-              <h3 class="text-navy">6. Growth & Expansion</h3>
-              <p>Branding, digital presence and entry into new markets.</p>
+              <h3 class="text-navy">6. Branding & Digital Presence</h3>
+              <p>Strategic marketing guidance tailored for corporate growth and investor readiness.</p>
             </div>
           </div>
+
+          <div class="timeline-item left fade-up">
+            <div class="timeline-content card" style="background: #F8FAFC; border: none;">
+              <h3 class="text-navy">7. Business Expansion</h3>
+              <p>Due diligence and structural planning for Series A/B funding and domestic scaling.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right fade-up">
+            <div class="timeline-content card" style="background: #F8FAFC; border: none;">
+              <h3 class="text-navy">8. Long-Term Advisory</h3>
+              <p>Masterminding cross-border expansion and Virtual CFO strategic leadership.</p>
+            </div>
+          </div>
+
         </div>
       </div>
+      <p class="text-center mt-5 font-weight-500 fade-up text-navy">Wherever you are in this lifecycle, Truvisory transforms financial friction into operational momentum.</p>
     </div>
   </section>
 
@@ -178,40 +209,40 @@
           <div class="flag-icon mb-3" style="font-size: 2rem;">🇮🇳</div>
           <h3 class="text-navy">India</h3>
           <p>Navigate the complexities of FEMA, RBI regulations, and GST. We facilitate frictionless inbound investment, subsidiary setups, and aggressive domestic scaling.</p>
-          <a href="contact.html" class="link-teal d-block mt-3">Explore India Services &rarr;</a>
+          <a href="#cta" class="link-teal d-block mt-3">Explore India Services &rarr;</a>
         </div>
         <div class="country-card card fade-up text-left">
           <div class="flag-icon mb-3" style="font-size: 2rem;">🇦🇪</div>
           <h3 class="text-navy">UAE</h3>
           <p>Capitalize on strategic global positioning. We engineer Mainland, Free Zone, and Offshore setups tailored to your specific commercial objectives in Dubai and Abu Dhabi.</p>
-          <a href="contact.html" class="link-teal d-block mt-3">Explore UAE Services &rarr;</a>
+          <a href="#cta" class="link-teal d-block mt-3">Explore UAE Services &rarr;</a>
         </div>
         <div class="country-card card fade-up text-left">
           <div class="flag-icon mb-3" style="font-size: 2rem;">🇸🇬</div>
           <h3 class="text-navy">Singapore</h3>
           <p>Establish your Asian headquarters in a premier financial hub. We manage ACRA compliance, optimize corporate tax incentives, and structure wealth management vehicles.</p>
-          <a href="contact.html" class="link-teal d-block mt-3">Explore Singapore Services &rarr;</a>
+          <a href="#cta" class="link-teal d-block mt-3">Explore Singapore Services &rarr;</a>
         </div>
         <div class="country-card card fade-up text-left">
           <div class="flag-icon mb-3" style="font-size: 2rem;">🇬🇧</div>
           <h3 class="text-navy">United Kingdom</h3>
           <p>Secure a foothold in the European and global markets. We oversee UK Company House registrations, VAT structuring, and seamless integration with your parent entity.</p>
-          <a href="contact.html" class="link-teal d-block mt-3">Explore UK Services &rarr;</a>
+          <a href="#cta" class="link-teal d-block mt-3">Explore UK Services &rarr;</a>
         </div>
         <div class="country-card card fade-up text-left">
           <div class="flag-icon mb-3" style="font-size: 2rem;">🇭🇰</div>
           <h3 class="text-navy">Hong Kong</h3>
           <p>Access the gateway to mainland China. Our experts handle the nuances of the Inland Revenue Department, ensuring maximum advantage of Hong Kong's territorial tax system.</p>
-          <a href="contact.html" class="link-teal d-block mt-3">Explore Hong Kong Services &rarr;</a>
+          <a href="#cta" class="link-teal d-block mt-3">Explore Hong Kong Services &rarr;</a>
         </div>
         <div class="country-card card fade-up text-left">
           <div class="flag-icon mb-3" style="font-size: 2rem;">🇺🇸</div>
           <h3 class="text-navy">USA</h3>
           <p>Penetrate the world's largest market with confidence. From Delaware C-Corp formations to complex IRS compliance and state-level nexus analysis.</p>
-          <a href="contact.html" class="link-teal d-block mt-3">Explore USA Services &rarr;</a>
+          <a href="#cta" class="link-teal d-block mt-3">Explore USA Services &rarr;</a>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-primary mt-5 fade-up">Plan Your Global Expansion</a>
+      <a href="#cta" class="btn btn-primary mt-5 fade-up">Plan Your Global Expansion</a>
     </div>
   </section>
 
@@ -226,70 +257,70 @@
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">🏢</div>
           <h4 class="text-navy">Business Setup</h4>
           <p>Precision structuring for Private Limited Companies, LLPs, and foreign subsidiaries.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
         
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">📊</div>
           <h4 class="text-navy">Accounting & Bookkeeping</h4>
           <p>Transform raw data into strategic intelligence with rigorous GAAP/IFRS bookkeeping.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
         
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">⚖️</div>
           <h4 class="text-navy">Taxation</h4>
           <p>Aggressive yet fully compliant tax optimization, handling GST, Corporate Tax, and Transfer Pricing.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
         
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">👥</div>
           <h4 class="text-navy">Payroll</h4>
           <p>Confidential, automated, and compliant payroll processing for global and local teams.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
         
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">📜</div>
           <h4 class="text-navy">Compliance</h4>
           <p>Meticulously manage secretarial audits, ROC filings, and regulatory compliance.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
         
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">™️</div>
           <h4 class="text-navy">Trademark</h4>
           <p>Fortify your intellectual property globally with comprehensive trademark registration.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
         
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">💡</div>
           <h4 class="text-navy">Patent</h4>
           <p>Rigorous patent filings to secure your commercial and technological innovations.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
 
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">🤝</div>
           <h4 class="text-navy">Business Advisory</h4>
           <p>Navigate complex corporate transitions, restructuring, and joint ventures.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
         
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">📈</div>
           <h4 class="text-navy">Virtual CFO</h4>
           <p>Elite financial leadership on demand for cash flow forecasting and strategic guidance.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
 
         <div class="service-card card fade-up text-center">
           <div class="service-icon text-teal mb-3" style="font-size: 2rem;">🚀</div>
           <h4 class="text-navy">Business Growth Solutions</h4>
           <p>Prepare for liquidity events with rigorous financial due diligence and enterprise valuations.</p>
-          <a href="contact.html" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
+          <a href="#cta" class="btn btn-outline w-100 mt-3" style="padding: 8px;">Learn More</a>
         </div>
       </div>
     </div>
@@ -315,7 +346,7 @@
         </div>
       </div>
       <div class="text-center mt-5">
-        <a href="contact.html" class="btn btn-primary fade-up">Partner With Us</a>
+        <a href="#cta" class="btn btn-primary fade-up">Partner With Us</a>
       </div>
     </div>
   </section>
@@ -330,49 +361,49 @@
           <div class="text-teal mb-2" style="font-size: 1.5rem;">🚀</div>
           <h4 class="text-navy">Startups</h4>
           <p style="font-size: 0.85rem;" class="mb-3">Valuation and VC compliance.</p>
-          <a href="contact.html" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
+          <a href="#cta" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
         </div>
         <div class="card text-center fade-up">
           <div class="text-teal mb-2" style="font-size: 1.5rem;">🏭</div>
           <h4 class="text-navy">Manufacturing</h4>
           <p style="font-size: 0.85rem;" class="mb-3">Supply chain tax optimization.</p>
-          <a href="contact.html" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
+          <a href="#cta" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
         </div>
         <div class="card text-center fade-up">
           <div class="text-teal mb-2" style="font-size: 1.5rem;">⚕️</div>
           <h4 class="text-navy">Healthcare</h4>
           <p style="font-size: 0.85rem;" class="mb-3">Rigorous regulatory compliance.</p>
-          <a href="contact.html" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
+          <a href="#cta" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
         </div>
         <div class="card text-center fade-up">
           <div class="text-teal mb-2" style="font-size: 1.5rem;">💻</div>
           <h4 class="text-navy">IT & SaaS</h4>
           <p style="font-size: 0.85rem;" class="mb-3">Revenue recognition and IP.</p>
-          <a href="contact.html" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
+          <a href="#cta" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
         </div>
         <div class="card text-center fade-up">
           <div class="text-teal mb-2" style="font-size: 1.5rem;">🚢</div>
           <h4 class="text-navy">Import & Export</h4>
           <p style="font-size: 0.85rem;" class="mb-3">Customs and cross-border tax.</p>
-          <a href="contact.html" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
+          <a href="#cta" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
         </div>
         <div class="card text-center fade-up">
           <div class="text-teal mb-2" style="font-size: 1.5rem;">🛒</div>
           <h4 class="text-navy">Retail & E-commerce</h4>
           <p style="font-size: 0.85rem;" class="mb-3">Multi-state GST reconciliation.</p>
-          <a href="contact.html" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
+          <a href="#cta" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
         </div>
         <div class="card text-center fade-up">
           <div class="text-teal mb-2" style="font-size: 1.5rem;">🚚</div>
           <h4 class="text-navy">Logistics</h4>
           <p style="font-size: 0.85rem;" class="mb-3">Fleet accounting & taxation.</p>
-          <a href="contact.html" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
+          <a href="#cta" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
         </div>
         <div class="card text-center fade-up">
           <div class="text-teal mb-2" style="font-size: 1.5rem;">👔</div>
           <h4 class="text-navy">Professional Services</h4>
           <p style="font-size: 0.85rem;" class="mb-3">Partnership structuring.</p>
-          <a href="contact.html" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
+          <a href="#cta" class="link-teal" style="font-size: 0.85rem;">Learn More</a>
         </div>
       </div>
     </div>
@@ -556,12 +587,12 @@
         <div class="footer-col">
           <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Quick Links</h4>
           <ul style="list-style: none; padding: 0;">
-            <li class="mb-2"><a href="index.html" class="link-navy">Home</a></li>
-            <li class="mb-2"><a href="about.html" class="link-navy">About Us</a></li>
-            <li class="mb-2"><a href="services.html" class="link-navy">Services</a></li>
-            <li class="mb-2"><a href="why-truvisory.html" class="link-navy">Why Truvisory</a></li>
-            <li class="mb-2"><a href="testimonials.html" class="link-navy">Testimonials</a></li>
-            <li class="mb-2"><a href="contact.html" class="link-navy">Contact Us</a></li>
+            <li class="mb-2"><a href="#home" class="link-navy">Home</a></li>
+            <li class="mb-2"><a href="#why-truvisory" class="link-navy">About Us</a></li>
+            <li class="mb-2"><a href="#solutions" class="link-navy">Services</a></li>
+            <li class="mb-2"><a href="#why-choose" class="link-navy">Why Truvisory</a></li>
+            <li class="mb-2"><a href="#testimonials" class="link-navy">Testimonials</a></li>
+            <li class="mb-2"><a href="#cta" class="link-navy">Contact Us</a></li>
           </ul>
         </div>
         
@@ -644,7 +675,7 @@
       
       <div class="footer-bottom mt-5 text-center" style="border-top: 1px solid var(--card-border); padding-top: 20px;">
         <a href="index.html" class="logo footer-logo mb-3 d-inline-block">
-          <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+          <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 40px;">
         </a>
         <p class="text-slate">&copy; 2026 Truvisory Financial Services Pvt. Ltd. All rights reserved.</p>
       </div>
@@ -657,10 +688,12 @@
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
     </svg>
   </a>
-<!-- Calendly widget scripts -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+"""
 
-  <script src="script.js"></script>
-</body>
-</html>
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(head_part + new_body + scripts_part)
+        
+    print("Updated index.html with explicit 12 sections and 7-column footer.")
+
+if __name__ == "__main__":
+    rewrite_index_html()

@@ -4,254 +4,339 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="title" content="Our Services | TRUVISORY">
-  <title>Our Services | TRUVISORY</title>
+  <title>Business Setup, Accounting, Taxation & Compliance Services | Truvisory</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/booking.css">
+  <link rel="stylesheet" href="assets/css/mega-menu.css">
 </head>
-<body class="dark-theme">
+<body>
   
-          <header class="glass-nav" id="navbar">
-    <div class="container nav-container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" style="display: flex; align-items: center;">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 200px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      </a>
       
-      <!-- Left Side: Logo and Navigation Links -->
-      <div class="nav-left-group" style="display: flex; align-items: center;">
-        <a href="index.html" class="logo" style="display: flex; align-items: center; margin-right: 40px;">
-          <img src="assets/images/logo.png" alt="Truvisory Logo" style="height: 160px; width: auto; object-fit: contain;">
-        </a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="why-truvisory.html">Why Truvisory</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="nav-cta">Book a Free Consultation</a>
+      </nav>
 
-        <nav class="nav-links" style="display: flex; align-items: center; gap: 25px;">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="countries.html">Countries</a>
-          <a href="industries.html">Industries</a>
-          <a href="resources.html">Resources</a>
-          <a href="why-truvisory.html">Why Us</a>
-          <a href="testimonials.html">Testimonials</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-      </div>
-
-      <!-- Right Side: Buttons -->
-      <div class="nav-actions" style="display: flex; gap: 15px; align-items: center; margin-left: 20px;">
-        <a href="login.html" class="btn btn-outline" style="padding: 12px 24px; font-weight: 500; border-color: rgba(255,255,255,0.2);">Login / Sign Up</a>
-        
-      </div>
-      
-      <div class="menu-toggle" style="margin-left: 20px;"><i class="fa-solid fa-bars"></i></div>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="menu-toggle">
+        <span class="hamburger"></span>
+      </button>
     </div>
   </header>
 
-  <main>
+    <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      </a>
+      <button class="close-menu" id="close-menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-truvisory.html">Why Truvisory</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+<main>
+
     <section class="section" style="padding-top: 150px;">
       <div class="container">
         <div class="section-header reveal">
-          <h1 class="hero-headline">Our Services</h1>
+          <h1 class="hero-headline text-navy" style="font-size: 3rem; margin-bottom: 20px;">Every Service Your Business Needs, Under One Roof</h1>
+          <p class="mb-5 max-w-700 mx-auto text-slate" style="font-size: 1.1rem; line-height: 1.8;">From the day you incorporate to the day you expand internationally, Truvisory manages the financial, legal and regulatory work — so you can focus on running your business.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-bottom: 40px;">Book a Free Consultation</a>
           <div class="title-underline"></div>
         </div>
         
-        <div class="grid-4">
-          <div class="glass-card reveal card-hover">
-            <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
-            <h3 class="card-title"><a href="services/company-incorporation.html" style="color: inherit; text-decoration: none;">Company Incorporation</a></h3>
+        <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+          
+          <div class="glass-card reveal card-hover" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-building"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Business Setup</h3>
+            <p class="text-slate mb-4">Choosing the right structure and jurisdiction is the single most important decision a new business makes. We guide founders through entity selection, registration and licensing — in India and abroad.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Private Limited, LLP, OPC & Partnership registration in India</li>
+              <li>Overseas company incorporation (UAE, Singapore, UK, Hong Kong, USA)</li>
+              <li>Entity structuring and shareholder agreements</li>
+              <li>Business licenses and sector-specific registrations</li>
+              <li>Bank account opening support</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Business Setup →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-1">
-            <div class="card-icon"><i class="fa-solid fa-plane-departure"></i></div>
-            <h3 class="card-title"><a href="services/overseas-business-setup.html" style="color: inherit; text-decoration: none;">Overseas Business Setup</a></h3>
+
+          <div class="glass-card reveal card-hover delay-1" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-calculator"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Accounting & Bookkeeping</h3>
+            <p class="text-slate mb-4">Accurate books are the foundation of every sound business decision. We manage day-to-day accounting so your financials are always current, audit-ready and easy to act on.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Monthly/quarterly bookkeeping</li>
+              <li>Cloud accounting setup (Tally, Zoho Books, QuickBooks, Xero)</li>
+              <li>MIS and management reports</li>
+              <li>Bank reconciliation</li>
+              <li>Accounts payable/receivable management</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Accounting & Bookkeeping →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-2">
-            <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
-            <h3 class="card-title"><a href="services/international-tax-planning.html" style="color: inherit; text-decoration: none;">International Tax Planning</a></h3>
+
+          <div class="glass-card reveal card-hover delay-2" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Taxation</h3>
+            <p class="text-slate mb-4">From routine filings to cross-border tax planning, our tax specialists help you stay compliant while structuring your affairs efficiently.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Income tax return filing & planning</li>
+              <li>GST registration, filing and advisory</li>
+              <li>VAT registration and filing (UAE and other jurisdictions)</li>
+              <li>International tax planning and DTAA advisory</li>
+              <li>Transfer pricing support</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Taxation →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-3">
-            <div class="card-icon"><i class="fa-solid fa-percent"></i></div>
-            <h3 class="card-title"><a href="services/gst-and-vat.html" style="color: inherit; text-decoration: none;">GST & VAT</a></h3>
+
+          <div class="glass-card reveal card-hover" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-users"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Payroll</h3>
+            <p class="text-slate mb-4">We manage the full payroll cycle so employees are paid accurately and on time, and statutory obligations never slip.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Payroll processing and payslip generation</li>
+              <li>PF, ESI and professional tax compliance</li>
+              <li>Full & final settlements</li>
+              <li>Payroll MIS and reporting</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Payroll →</a>
+          </div>
+
+          <div class="glass-card reveal card-hover delay-1" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-shield-check"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Compliance</h3>
+            <p class="text-slate mb-4">Missed a filing deadline once, and it can snowball into penalties and reputational risk. We keep your business compliant across every applicable regulation.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>ROC and annual filings</li>
+              <li>Statutory audits and internal audits coordination</li>
+              <li>FEMA and RBI compliance for cross-border transactions</li>
+              <li>Secretarial compliance and board resolutions</li>
+              <li>Compliance calendar management</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Compliance →</a>
+          </div>
+
+          <div class="glass-card reveal card-hover delay-2" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-user-tie"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Virtual CFO</h3>
+            <p class="text-slate mb-4">Get senior financial strategy and oversight without the cost of a full-time CFO — ideal for startups and growing SMEs.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Financial planning and budgeting</li>
+              <li>Cash flow management</li>
+              <li>Investor and board reporting</li>
+              <li>Fundraising support and financial due diligence</li>
+              <li>KPI dashboards and performance tracking</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Virtual CFO →</a>
           </div>
           
-          <div class="glass-card reveal card-hover">
-            <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
-            <h3 class="card-title"><a href="services/corporate-tax.html" style="color: inherit; text-decoration: none;">Corporate Tax</a></h3>
-          </div>
-          <div class="glass-card reveal card-hover delay-1">
-            <div class="card-icon"><i class="fa-solid fa-book"></i></div>
-            <h3 class="card-title"><a href="services/accounting-and-bookkeeping.html" style="color: inherit; text-decoration: none;">Accounting & Bookkeeping</a></h3>
-          </div>
-          <div class="glass-card reveal card-hover delay-2">
-            <div class="card-icon"><i class="fa-solid fa-users"></i></div>
-            <h3 class="card-title"><a href="services/payroll.html" style="color: inherit; text-decoration: none;">Payroll</a></h3>
-          </div>
-          <div class="glass-card reveal card-hover delay-3">
-            <div class="card-icon"><i class="fa-solid fa-clipboard-check"></i></div>
-            <h3 class="card-title"><a href="services/compliance-management.html" style="color: inherit; text-decoration: none;">Compliance Management</a></h3>
+          <div class="glass-card reveal card-hover" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-trademark"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Trademark</h3>
+            <p class="text-slate mb-4">Your brand name and identity are business assets. We help you register and protect them before someone else does.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Trademark search and availability check</li>
+              <li>Trademark application and filing</li>
+              <li>Objection and opposition handling</li>
+              <li>Trademark renewal and portfolio management</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Trademark →</a>
           </div>
           
-          <div class="glass-card reveal card-hover">
-            <div class="card-icon"><i class="fa-solid fa-user-tie"></i></div>
-            <h3 class="card-title"><a href="services/virtual-cfo.html" style="color: inherit; text-decoration: none;">Virtual CFO</a></h3>
+          <div class="glass-card reveal card-hover delay-1" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Patent</h3>
+            <p class="text-slate mb-4">For businesses building proprietary products or processes, we support the patent filing journey from search to grant.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Patentability search</li>
+              <li>Patent drafting support (via specialist partners)</li>
+              <li>Application filing and prosecution tracking</li>
+              <li>Patent portfolio advisory</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Patent →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-1">
-            <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
-            <h3 class="card-title"><a href="services/business-advisory.html" style="color: inherit; text-decoration: none;">Business Advisory</a></h3>
+          
+          <div class="glass-card reveal card-hover delay-2" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-file-contract"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Legal Documentation</h3>
+            <p class="text-slate mb-4">Well-drafted agreements protect a business long before a dispute ever arises. We prepare and review the documents that govern your key relationships.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Founders' and shareholders' agreements</li>
+              <li>Vendor, client and employment contracts</li>
+              <li>NDAs and MoUs</li>
+              <li>Terms of service and privacy policy drafting</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Legal Documentation →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-2">
-            <div class="card-icon"><i class="fa-solid fa-store"></i></div>
-            <h3 class="card-title"><a href="services/franchise-expansion.html" style="color: inherit; text-decoration: none;">Franchise Expansion</a></h3>
+          
+          <div class="glass-card reveal card-hover" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-comments-dollar"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Business Advisory</h3>
+            <p class="text-slate mb-4">Strategic guidance for founders navigating growth decisions — from restructuring to new market entry.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Business structuring and restructuring</li>
+              <li>Feasibility studies and market entry advisory</li>
+              <li>Risk assessment and mitigation planning</li>
+              <li>M&A and due diligence support</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Business Advisory →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-3">
-            <div class="card-icon"><i class="fa-solid fa-sitemap"></i></div>
-            <h3 class="card-title"><a href="services/business-structuring.html" style="color: inherit; text-decoration: none;">Business Structuring</a></h3>
+          
+          <div class="glass-card reveal card-hover delay-1" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="card-icon" style="font-size: 2.5rem; color: var(--link-teal); margin-bottom: 20px;"><i class="fa-solid fa-rocket"></i></div>
+            <h3 class="card-title text-navy" style="font-size: 1.5rem; margin-bottom: 15px;">Business Growth Solutions</h3>
+            <p class="text-slate mb-4">A modern business needs more than compliance — it needs a professional presence. We help brands look and sell as credible as they are.</p>
+            <strong class="text-navy d-block mb-2">What's Included</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 20px;">
+              <li>Branding and visual identity</li>
+              <li>Website design and development</li>
+              <li>Search engine optimisation (SEO)</li>
+              <li>Digital marketing and social media management</li>
+            </ul>
+            <a href="contact.html" class="link-teal font-weight-500">Get Started with Business Growth Solutions →</a>
           </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- FOOTER -->
-  
-    <!-- MEGA FOOTER -->
-    <footer class="mega-footer">
-        <div class="container">
-            <div class="footer-top">
-                <!-- Column 1 -->
-                <div class="footer-col">
-                    <div class="footer-brand">
-                        <a href="index.html">
-                            <img src="assets/images/logo.png" alt="Truvisory Logo" style="height: 100px; width: auto; transform: scale(2.6); transform-origin: left center; margin-right: 100px; object-fit: contain;">
-                        </a>
-                        <p style="margin-top: 15px;">Your trusted partner for Global Business Setup, Company Incorporation, Taxation, Accounting, Compliance, Payroll, and Business Advisory.</p>
-                    </div>
-                    <ul class="footer-contact-list">
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Corporate Office, Mumbai, India</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            <span>+91 99304 26774</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>truvisoryfinance@gmail.com</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="newsletter-box">
-                        <h5>Stay Updated</h5>
-                        <p style="font-size: 0.85rem;">Tax Changes & Compliance Alerts</p>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Email Address">
-                            <button type="button">Subscribe</button>
-                        </div>
-                    </div>
-                    
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Column 2 -->
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="industries.html">Industries</a></li>
-                        <li><a href="countries.html">Global Presence</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="why-truvisory.html">Why Us</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="contact.html">Careers</a></li>
-                    </ul>
-                    
-                    <h4 style="margin-top: 30px;">Resources</h4>
-                    <ul>
-                        <li><a href="resources/business-guides.html">Business Guides</a></li>
-                        <li><a href="resources/tax-calendar.html">Tax Calendar</a></li>
-                        <li><a href="resources/compliance-calendar.html">Compliance Calendar</a></li>
-                        <li><a href="resources/brochures.html">Download Brochures</a></li>
-                        <li><a href="resources/success-stories.html">Success Stories</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 3 -->
-                <div class="footer-col">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="services/company-incorporation.html">Company Incorporation</a></li>
-                        <li><a href="services/overseas-business-setup.html">Overseas Business Setup</a></li>
-                        <li><a href="services/international-tax-planning.html">International Tax Planning</a></li>
-                        <li><a href="services/gst-and-vat.html">GST & VAT</a></li>
-                        <li><a href="services/corporate-tax.html">Corporate Tax</a></li>
-                        <li><a href="services/accounting-and-bookkeeping.html">Accounting & Bookkeeping</a></li>
-                        <li><a href="services/payroll-services.html">Payroll Services</a></li>
-                        <li><a href="services/compliance-management.html">Compliance Management</a></li>
-                        <li><a href="services/virtual-cfo.html">Virtual CFO</a></li>
-                        <li><a href="services/business-advisory.html">Business Advisory</a></li>
-                        <li><a href="services/franchise-expansion.html">Franchise Expansion</a></li>
-                        <li><a href="services/business-structuring.html">Business Structuring</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 4 -->
-                <div class="footer-col">
-                    <h4>Industries We Serve</h4>
-                    <ul>
-                        <li><a href="industries.html">Startups & SMEs</a></li>
-                        <li><a href="industries.html">Large Enterprises</a></li>
-                        <li><a href="industries/manufacturing.html">Manufacturing</a></li>
-                        <li><a href="industries/healthcare.html">Healthcare</a></li>
-                        <li><a href="industries.html">Retail & E-commerce</a></li>
-                        <li><a href="industries/technology.html">Technology</a></li>
-                        <li><a href="industries/hospitality.html">Hospitality</a></li>
-                        <li><a href="industries/logistics.html">Logistics</a></li>
-                        <li><a href="industries.html">Construction & Real Estate</a></li>
-                        <li><a href="industries/financial-services.html">Financial Services</a></li>
-                    </ul>
-                    
-                    <h4 style="margin-top: 30px;">Countries We Support</h4>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">India</a>
-                        <a href="countries/uae.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">UAE</a>
-                        <a href="countries/usa.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">USA</a>
-                        <a href="countries/singapore.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Singapore</a>
-                        <a href="countries/hong-kong.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Hong Kong</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">UK</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Canada</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Australia</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Saudi Arabia</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-badges">
-                <div class="badge-item"><i class="fa-solid fa-certificate"></i> ISO Certified</div>
-                <div class="badge-item"><i class="fa-solid fa-shield-halved"></i> Data Privacy Compliance</div>
-                <div class="badge-item"><i class="fa-solid fa-lock"></i> Secure Payments</div>
-                <div class="badge-item"><i class="fa-solid fa-landmark"></i> Government Registered</div>
-                <div class="badge-item"><i class="fa-solid fa-building-circle-check"></i> MSME/Udyam Registered</div>
-            </div>
-            
-            <div class="footer-bottom-mega">
-                <div>&copy; 2026 Truvisory Financial Services. All Rights Reserved.</div>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Cookie Policy</a>
-                    <a href="#">Disclaimer</a>
-                    <a href="#">Sitemap</a>
-                </div>
-            </div>
+  <footer class="footer section-white border-top-light" style="padding-top: 60px; padding-bottom: 30px;">
+    <div class="container">
+      <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px;">
+        
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="index.html" class="link-navy">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="link-navy">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="link-navy">Services</a></li>
+            <li class="mb-2"><a href="why-truvisory.html" class="link-navy">Why Truvisory</a></li>
+            <li class="mb-2"><a href="testimonials.html" class="link-navy">Testimonials</a></li>
+            <li class="mb-2"><a href="contact.html" class="link-navy">Contact Us</a></li>
+          </ul>
         </div>
-    </footer>
+        
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Services</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Business Setup</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Accounting & Bookkeeping</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Taxation</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Payroll</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Compliance</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Trademark & Patent</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Virtual CFO</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Countries</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">India</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">UAE</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Singapore</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">UK</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Hong Kong</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">USA</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Resources</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Featured Articles</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Business Guides</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Country Guides</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Compliance Updates</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Downloads</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 5 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Contact</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2">📞 <a href="tel:+919930426774" class="link-teal">+91 99304 26774</a></li>
+            <li class="mb-2">✉ <a href="mailto:truvisoryfinance@gmail.com" class="link-teal" style="word-break: break-all;">truvisoryfinance@gmail.com</a></li>
+            <li class="mb-2">📍 Mumbai, India</li>
+            <li class="mb-2">🕒 Mon - Fri, 9am - 6pm</li>
+          </ul>
+        </div>
+
+        <!-- Column 6 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Legal Pages</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Terms & Conditions</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Disclaimer</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Cookie Policy</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 7 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Social Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">LinkedIn</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Facebook</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Instagram</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">X (Twitter)</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">YouTube</a></li>
+            <li class="mb-2"><a href="https://wa.me/919930426774?text=Hello%20Truvisory%20Financial%20Services,%20I%20would%20like%20to%20know%20more%20about%20your%20business%20advisory%20and%20financial%20services." class="link-navy" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom mt-5 text-center" style="border-top: 1px solid var(--card-border); padding-top: 20px;">
+        <a href="index.html" class="logo footer-logo mb-3 d-inline-block">
+          <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+        </a>
+        <p class="text-slate">&copy; 2026 Truvisory Financial Services Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
     
     <!-- Floating Widgets -->
     <a href="https://wa.me/919930426774" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">

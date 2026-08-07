@@ -4,220 +4,366 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="title" content="Countries We Serve | TRUVISORY">
-  <title>Countries We Serve | TRUVISORY</title>
+  <title>Expand Into the World's Leading Business Destinations | Truvisory</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/booking.css">
+  <link rel="stylesheet" href="assets/css/mega-menu.css">
 </head>
-<body class="dark-theme">
+<body>
   
-          <header class="glass-nav" id="navbar">
-    <div class="container nav-container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" style="display: flex; align-items: center;">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 200px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      </a>
       
-      <!-- Left Side: Logo and Navigation Links -->
-      <div class="nav-left-group" style="display: flex; align-items: center;">
-        <a href="index.html" class="logo" style="display: flex; align-items: center; margin-right: 40px;">
-          <img src="assets/images/logo.png" alt="Truvisory Logo" style="height: 160px; width: auto; object-fit: contain;">
-        </a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="why-truvisory.html">Why Truvisory</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="nav-cta">Book a Free Consultation</a>
+      </nav>
 
-        <nav class="nav-links" style="display: flex; align-items: center; gap: 25px;">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="countries.html">Countries</a>
-          <a href="industries.html">Industries</a>
-          <a href="resources.html">Resources</a>
-          <a href="why-truvisory.html">Why Us</a>
-          <a href="testimonials.html">Testimonials</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-      </div>
-
-      <!-- Right Side: Buttons -->
-      <div class="nav-actions" style="display: flex; gap: 15px; align-items: center; margin-left: 20px;">
-        <a href="login.html" class="btn btn-outline" style="padding: 12px 24px; font-weight: 500; border-color: rgba(255,255,255,0.2);">Login / Sign Up</a>
-        
-      </div>
-      
-      <div class="menu-toggle" style="margin-left: 20px;"><i class="fa-solid fa-bars"></i></div>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="menu-toggle">
+        <span class="hamburger"></span>
+      </button>
     </div>
   </header>
 
-  <main>
+    <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      </a>
+      <button class="close-menu" id="close-menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-truvisory.html">Why Truvisory</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+<main>
+
     <section class="section" style="padding-top: 150px;">
       <div class="container">
         <div class="section-header reveal">
-          <h1 class="hero-headline">Countries We Serve</h1>
+          <h1 class="hero-headline text-navy" style="font-size: 3rem; margin-bottom: 20px;">Expand Into the World's Leading Business Destinations</h1>
+          <p class="mb-5 max-w-700 mx-auto text-slate" style="font-size: 1.1rem; line-height: 1.8;">We help you choose the right jurisdiction and manage every step of setting up and staying compliant there.</p>
           <div class="title-underline"></div>
         </div>
         
-        <div class="grid-4">
-          <div class="glass-card reveal card-hover">
-            <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
-            <h3 class="card-title"><a href="countries/uae.html" style="color: inherit; text-decoration: none;">United Arab Emirates (UAE)</a></h3>
+        <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; margin-top: 40px;">
+          
+          <div class="glass-card reveal card-hover" style="padding: 40px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="flag-icon mb-3" style="font-size: 3rem;">🇮🇳</div>
+            <h3 class="card-title text-navy" style="font-size: 2rem; margin-bottom: 15px;">India</h3>
+            <p class="text-slate mb-4"><strong>Why India:</strong> The natural home base for most founders — a large domestic market, a maturing startup ecosystem and government incentives for new businesses.</p>
+            <strong class="text-navy d-block mb-2">Entity Types</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Private Limited Company</li>
+              <li>Limited Liability Partnership (LLP)</li>
+              <li>One Person Company (OPC)</li>
+              <li>Partnership Firm / Sole Proprietorship</li>
+            </ul>
+            <strong class="text-navy d-block mb-2">Documents Required</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>PAN & Aadhaar of directors/partners</li>
+              <li>Registered office address proof</li>
+              <li>Digital Signature Certificate (DSC)</li>
+              <li>Director Identification Number (DIN)</li>
+            </ul>
+            <p class="text-slate mb-4"><strong>Timeline:</strong> Typically 7–15 working days for incorporation, subject to document readiness and government processing.</p>
+            
+            <strong class="text-navy d-block mb-2">FAQs</strong>
+            <div style="background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p class="text-navy font-weight-600 mb-1">Which entity type is right for my business?</p>
+                <p class="text-slate mb-3" style="font-size: 0.9rem;">It depends on your funding plans, liability preference and number of founders — our advisors will recommend the best fit during your consultation.</p>
+                
+                <p class="text-navy font-weight-600 mb-1">Do I need a physical office to register a company?</p>
+                <p class="text-slate mb-0" style="font-size: 0.9rem;">A registered office address is required, but it can be a residential or shared/virtual address in most cases.</p>
+            </div>
+            
+            <a href="contact.html" class="btn btn-outline w-100 text-center">Book a India Setup Consultation →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-1">
-            <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
-            <h3 class="card-title"><a href="countries/singapore.html" style="color: inherit; text-decoration: none;">Singapore</a></h3>
+
+          <div class="glass-card reveal card-hover delay-1" style="padding: 40px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="flag-icon mb-3" style="font-size: 3rem;">🇦🇪</div>
+            <h3 class="card-title text-navy" style="font-size: 2rem; margin-bottom: 15px;">UAE</h3>
+            <p class="text-slate mb-4"><strong>Why UAE:</strong> Zero personal income tax, 100% foreign ownership in most sectors, and strategic access to Middle East, African and South Asian markets.</p>
+            <strong class="text-navy d-block mb-2">Entity Types</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Mainland Company</li>
+              <li>Free Zone Company</li>
+              <li>Offshore Company</li>
+            </ul>
+            <strong class="text-navy d-block mb-2">Documents Required</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Passport copies of shareholders</li>
+              <li>Proof of address</li>
+              <li>Business activity and trade name approval</li>
+              <li>No Objection Certificate (if applicable)</li>
+            </ul>
+            <p class="text-slate mb-4"><strong>Timeline:</strong> Free zone company setup can be completed in as little as 5–10 working days; mainland setup typically takes 2–4 weeks.</p>
+            
+            <strong class="text-navy d-block mb-2">FAQs</strong>
+            <div style="background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p class="text-navy font-weight-600 mb-1">Can I own 100% of my UAE company as a foreigner?</p>
+                <p class="text-slate mb-3" style="font-size: 0.9rem;">Yes, most Free Zone and many Mainland activities now permit full foreign ownership.</p>
+                
+                <p class="text-navy font-weight-600 mb-1">Do I need to be resident in the UAE to set up a company?</p>
+                <p class="text-slate mb-0" style="font-size: 0.9rem;">No, but a UAE residence visa is usually obtained as part of the setup process for owners who wish to operate locally.</p>
+            </div>
+            
+            <a href="contact.html" class="btn btn-outline w-100 text-center">Book a UAE Setup Consultation →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-2">
-            <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
-            <h3 class="card-title"><a href="countries/hong-kong.html" style="color: inherit; text-decoration: none;">Hong Kong</a></h3>
+
+          <div class="glass-card reveal card-hover" style="padding: 40px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="flag-icon mb-3" style="font-size: 3rem;">🇸🇬</div>
+            <h3 class="card-title text-navy" style="font-size: 2rem; margin-bottom: 15px;">Singapore</h3>
+            <p class="text-slate mb-4"><strong>Why Singapore:</strong> A stable, pro-business economy with attractive corporate tax rates, strong IP protection and a strategic gateway to Southeast Asia.</p>
+            <strong class="text-navy d-block mb-2">Entity Types</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Private Limited Company (Pte. Ltd.)</li>
+              <li>Branch Office</li>
+              <li>Representative Office</li>
+            </ul>
+            <strong class="text-navy d-block mb-2">Documents Required</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Passport/NRIC of shareholders and directors</li>
+              <li>Registered local address</li>
+              <li>Company constitution</li>
+              <li>Details of a locally resident director</li>
+            </ul>
+            <p class="text-slate mb-4"><strong>Timeline:</strong> Incorporation can typically be completed within 1–3 working days once documentation is finalised.</p>
+            
+            <strong class="text-navy d-block mb-2">FAQs</strong>
+            <div style="background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p class="text-navy font-weight-600 mb-1">Do I need a local director to incorporate in Singapore?</p>
+                <p class="text-slate mb-3" style="font-size: 0.9rem;">Yes, at least one director must be a Singapore resident — we can assist with nominee director services if required.</p>
+                
+                <p class="text-navy font-weight-600 mb-1">What is the corporate tax rate in Singapore?</p>
+                <p class="text-slate mb-0" style="font-size: 0.9rem;">Singapore offers a competitive headline corporate tax rate with partial exemptions for new startups — our team can walk you through current rates during consultation.</p>
+            </div>
+            
+            <a href="contact.html" class="btn btn-outline w-100 text-center">Book a Singapore Setup Consultation →</a>
           </div>
-          <div class="glass-card reveal card-hover delay-3">
-            <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
-            <h3 class="card-title"><a href="countries/usa.html" style="color: inherit; text-decoration: none;">USA</a></h3>
+
+          <div class="glass-card reveal card-hover delay-1" style="padding: 40px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="flag-icon mb-3" style="font-size: 3rem;">🇬🇧</div>
+            <h3 class="card-title text-navy" style="font-size: 2rem; margin-bottom: 15px;">United Kingdom</h3>
+            <p class="text-slate mb-4"><strong>Why United Kingdom:</strong> A globally respected legal system, easy company formation and strong access to European and international markets.</p>
+            <strong class="text-navy d-block mb-2">Entity Types</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Private Limited Company (Ltd)</li>
+              <li>Limited Liability Partnership (LLP)</li>
+              <li>Sole Trader</li>
+            </ul>
+            <strong class="text-navy d-block mb-2">Documents Required</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Passport/ID of directors and shareholders</li>
+              <li>UK registered office address</li>
+              <li>Memorandum & Articles of Association</li>
+              <li>Proof of address for directors</li>
+            </ul>
+            <p class="text-slate mb-4"><strong>Timeline:</strong> Companies House registration can often be completed within 24–48 hours once documentation is ready.</p>
+            
+            <strong class="text-navy d-block mb-2">FAQs</strong>
+            <div style="background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p class="text-navy font-weight-600 mb-1">Can a non-UK resident register a UK company?</p>
+                <p class="text-slate mb-3" style="font-size: 0.9rem;">Yes, there is no requirement for directors or shareholders to be UK residents.</p>
+                
+                <p class="text-navy font-weight-600 mb-1">Do I need a UK bank account before incorporating?</p>
+                <p class="text-slate mb-0" style="font-size: 0.9rem;">No, incorporation can proceed first; we assist with bank account opening as a subsequent step.</p>
+            </div>
+            
+            <a href="contact.html" class="btn btn-outline w-100 text-center">Book a United Kingdom Setup Consultation →</a>
           </div>
+
+          <div class="glass-card reveal card-hover" style="padding: 40px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="flag-icon mb-3" style="font-size: 3rem;">🇭🇰</div>
+            <h3 class="card-title text-navy" style="font-size: 2rem; margin-bottom: 15px;">Hong Kong</h3>
+            <p class="text-slate mb-4"><strong>Why Hong Kong:</strong> A low, simple tax regime, no foreign exchange controls and a strategic gateway into mainland China and wider Asia.</p>
+            <strong class="text-navy d-block mb-2">Entity Types</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Private Limited Company</li>
+              <li>Branch Office</li>
+              <li>Representative Office</li>
+            </ul>
+            <strong class="text-navy d-block mb-2">Documents Required</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Passport copies of shareholders and directors</li>
+              <li>Registered Hong Kong office address</li>
+              <li>Company Secretary appointment</li>
+              <li>Proof of address</li>
+            </ul>
+            <p class="text-slate mb-4"><strong>Timeline:</strong> Incorporation is typically completed within 5–7 working days.</p>
+            
+            <strong class="text-navy d-block mb-2">FAQs</strong>
+            <div style="background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p class="text-navy font-weight-600 mb-1">Is there a minimum capital requirement?</p>
+                <p class="text-slate mb-3" style="font-size: 0.9rem;">No minimum paid-up capital is mandated for standard private limited companies.</p>
+                
+                <p class="text-navy font-weight-600 mb-1">Do I need to appoint a local company secretary?</p>
+                <p class="text-slate mb-0" style="font-size: 0.9rem;">Yes, Hong Kong law requires every company to appoint a company secretary who is a Hong Kong resident or licensed entity — we can provide this service.</p>
+            </div>
+            
+            <a href="contact.html" class="btn btn-outline w-100 text-center">Book a Hong Kong Setup Consultation →</a>
+          </div>
+
+          <div class="glass-card reveal card-hover delay-1" style="padding: 40px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div class="flag-icon mb-3" style="font-size: 3rem;">🇺🇸</div>
+            <h3 class="card-title text-navy" style="font-size: 2rem; margin-bottom: 15px;">USA</h3>
+            <p class="text-slate mb-4"><strong>Why USA:</strong> Access to the world's largest consumer market, strong investor familiarity and flexible entity structures across all 50 states.</p>
+            <strong class="text-navy d-block mb-2">Entity Types</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Limited Liability Company (LLC)</li>
+              <li>C-Corporation</li>
+              <li>S-Corporation (for eligible residents)</li>
+            </ul>
+            <strong class="text-navy d-block mb-2">Documents Required</strong>
+            <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-slate); margin-bottom: 15px;">
+              <li>Passport of members/shareholders</li>
+              <li>Registered agent details</li>
+              <li>Employer Identification Number (EIN) application</li>
+              <li>Operating agreement / bylaws</li>
+            </ul>
+            <p class="text-slate mb-4"><strong>Timeline:</strong> State-level registration can often be completed within 1–2 weeks, followed by EIN and bank account setup.</p>
+            
+            <strong class="text-navy d-block mb-2">FAQs</strong>
+            <div style="background: rgba(0,0,0,0.03); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p class="text-navy font-weight-600 mb-1">Which state should I incorporate in?</p>
+                <p class="text-slate mb-3" style="font-size: 0.9rem;">It depends on your business model — Delaware and Wyoming are popular for their business-friendly laws, but the right choice depends on where you plan to operate.</p>
+                
+                <p class="text-navy font-weight-600 mb-1">Can I open a US company without visiting the US?</p>
+                <p class="text-slate mb-0" style="font-size: 0.9rem;">Yes, most of the incorporation and EIN process can be completed remotely; a US bank account may require additional steps.</p>
+            </div>
+            
+            <a href="contact.html" class="btn btn-outline w-100 text-center">Book a USA Setup Consultation →</a>
+          </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- FOOTER -->
-  
-    <!-- MEGA FOOTER -->
-    <footer class="mega-footer">
-        <div class="container">
-            <div class="footer-top">
-                <!-- Column 1 -->
-                <div class="footer-col">
-                    <div class="footer-brand">
-                        <a href="index.html">
-                            <img src="assets/images/logo.png" alt="Truvisory Logo" style="height: 100px; width: auto; transform: scale(2.6); transform-origin: left center; margin-right: 100px; object-fit: contain;">
-                        </a>
-                        <p style="margin-top: 15px;">Your trusted partner for Global Business Setup, Company Incorporation, Taxation, Accounting, Compliance, Payroll, and Business Advisory.</p>
-                    </div>
-                    <ul class="footer-contact-list">
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Corporate Office, Mumbai, India</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            <span>+91 99304 26774</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>truvisoryfinance@gmail.com</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="newsletter-box">
-                        <h5>Stay Updated</h5>
-                        <p style="font-size: 0.85rem;">Tax Changes & Compliance Alerts</p>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Email Address">
-                            <button type="button">Subscribe</button>
-                        </div>
-                    </div>
-                    
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Column 2 -->
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="industries.html">Industries</a></li>
-                        <li><a href="countries.html">Global Presence</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="why-truvisory.html">Why Us</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="contact.html">Careers</a></li>
-                    </ul>
-                    
-                    <h4 style="margin-top: 30px;">Resources</h4>
-                    <ul>
-                        <li><a href="resources/business-guides.html">Business Guides</a></li>
-                        <li><a href="resources/tax-calendar.html">Tax Calendar</a></li>
-                        <li><a href="resources/compliance-calendar.html">Compliance Calendar</a></li>
-                        <li><a href="resources/brochures.html">Download Brochures</a></li>
-                        <li><a href="resources/success-stories.html">Success Stories</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 3 -->
-                <div class="footer-col">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="services/company-incorporation.html">Company Incorporation</a></li>
-                        <li><a href="services/overseas-business-setup.html">Overseas Business Setup</a></li>
-                        <li><a href="services/international-tax-planning.html">International Tax Planning</a></li>
-                        <li><a href="services/gst-and-vat.html">GST & VAT</a></li>
-                        <li><a href="services/corporate-tax.html">Corporate Tax</a></li>
-                        <li><a href="services/accounting-and-bookkeeping.html">Accounting & Bookkeeping</a></li>
-                        <li><a href="services/payroll-services.html">Payroll Services</a></li>
-                        <li><a href="services/compliance-management.html">Compliance Management</a></li>
-                        <li><a href="services/virtual-cfo.html">Virtual CFO</a></li>
-                        <li><a href="services/business-advisory.html">Business Advisory</a></li>
-                        <li><a href="services/franchise-expansion.html">Franchise Expansion</a></li>
-                        <li><a href="services/business-structuring.html">Business Structuring</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 4 -->
-                <div class="footer-col">
-                    <h4>Industries We Serve</h4>
-                    <ul>
-                        <li><a href="industries.html">Startups & SMEs</a></li>
-                        <li><a href="industries.html">Large Enterprises</a></li>
-                        <li><a href="industries/manufacturing.html">Manufacturing</a></li>
-                        <li><a href="industries/healthcare.html">Healthcare</a></li>
-                        <li><a href="industries.html">Retail & E-commerce</a></li>
-                        <li><a href="industries/technology.html">Technology</a></li>
-                        <li><a href="industries/hospitality.html">Hospitality</a></li>
-                        <li><a href="industries/logistics.html">Logistics</a></li>
-                        <li><a href="industries.html">Construction & Real Estate</a></li>
-                        <li><a href="industries/financial-services.html">Financial Services</a></li>
-                    </ul>
-                    
-                    <h4 style="margin-top: 30px;">Countries We Support</h4>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">India</a>
-                        <a href="countries/uae.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">UAE</a>
-                        <a href="countries/usa.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">USA</a>
-                        <a href="countries/singapore.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Singapore</a>
-                        <a href="countries/hong-kong.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Hong Kong</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">UK</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Canada</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Australia</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Saudi Arabia</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-badges">
-                <div class="badge-item"><i class="fa-solid fa-certificate"></i> ISO Certified</div>
-                <div class="badge-item"><i class="fa-solid fa-shield-halved"></i> Data Privacy Compliance</div>
-                <div class="badge-item"><i class="fa-solid fa-lock"></i> Secure Payments</div>
-                <div class="badge-item"><i class="fa-solid fa-landmark"></i> Government Registered</div>
-                <div class="badge-item"><i class="fa-solid fa-building-circle-check"></i> MSME/Udyam Registered</div>
-            </div>
-            
-            <div class="footer-bottom-mega">
-                <div>&copy; 2026 Truvisory Financial Services. All Rights Reserved.</div>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Cookie Policy</a>
-                    <a href="#">Disclaimer</a>
-                    <a href="#">Sitemap</a>
-                </div>
-            </div>
+  <footer class="footer section-white border-top-light" style="padding-top: 60px; padding-bottom: 30px;">
+    <div class="container">
+      <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px;">
+        
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="index.html" class="link-navy">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="link-navy">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="link-navy">Services</a></li>
+            <li class="mb-2"><a href="why-truvisory.html" class="link-navy">Why Truvisory</a></li>
+            <li class="mb-2"><a href="testimonials.html" class="link-navy">Testimonials</a></li>
+            <li class="mb-2"><a href="contact.html" class="link-navy">Contact Us</a></li>
+          </ul>
         </div>
-    </footer>
+        
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Services</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Business Setup</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Accounting & Bookkeeping</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Taxation</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Payroll</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Compliance</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Trademark & Patent</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Virtual CFO</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Countries</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">India</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">UAE</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Singapore</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">UK</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Hong Kong</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">USA</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Resources</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Featured Articles</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Business Guides</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Country Guides</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Compliance Updates</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Downloads</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 5 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Contact</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2">📞 <a href="tel:+919930426774" class="link-teal">+91 99304 26774</a></li>
+            <li class="mb-2">✉ <a href="mailto:truvisoryfinance@gmail.com" class="link-teal" style="word-break: break-all;">truvisoryfinance@gmail.com</a></li>
+            <li class="mb-2">📍 Mumbai, India</li>
+            <li class="mb-2">🕒 Mon - Fri, 9am - 6pm</li>
+          </ul>
+        </div>
+
+        <!-- Column 6 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Legal Pages</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Terms & Conditions</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Disclaimer</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Cookie Policy</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 7 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Social Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">LinkedIn</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Facebook</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Instagram</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">X (Twitter)</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">YouTube</a></li>
+            <li class="mb-2"><a href="https://wa.me/919930426774?text=Hello%20Truvisory%20Financial%20Services,%20I%20would%20like%20to%20know%20more%20about%20your%20business%20advisory%20and%20financial%20services." class="link-navy" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom mt-5 text-center" style="border-top: 1px solid var(--card-border); padding-top: 20px;">
+        <a href="index.html" class="logo footer-logo mb-3 d-inline-block">
+          <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+        </a>
+        <p class="text-slate">&copy; 2026 Truvisory Financial Services Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
     
     <!-- Floating Widgets -->
     <a href="https://wa.me/919930426774" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">

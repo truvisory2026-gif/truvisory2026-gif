@@ -1,5 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Intersection Observer for scroll animations
+
+  // Intersection Observer for fade animations
+  const fadeElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .fade-in');
+  
+  const fadeOptions = {
+    threshold: 0.15,
+    rootMargin: "0px 0px -50px 0px"
+  };
+  
+  const fadeOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, fadeOptions);
+  
+  fadeElements.forEach(el => {
+    fadeOnScroll.observe(el);
+  });
+
   const revealElements = document.querySelectorAll('.reveal');
   
   const revealOptions = {

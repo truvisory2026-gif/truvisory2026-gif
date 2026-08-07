@@ -9,249 +9,315 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/booking.css">
+  <link rel="stylesheet" href="assets/css/mega-menu.css">
 </head>
-<body class="dark-theme">
+<body>
   
-          <header class="glass-nav" id="navbar">
-    <div class="container nav-container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" style="display: flex; align-items: center;">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 200px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      </a>
       
-      <!-- Left Side: Logo and Navigation Links -->
-      <div class="nav-left-group" style="display: flex; align-items: center;">
-        <a href="index.html" class="logo" style="display: flex; align-items: center; margin-right: 40px;">
-          <img src="assets/images/logo.png" alt="Truvisory Logo" style="height: 160px; width: auto; object-fit: contain;">
-        </a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="why-truvisory.html">Why Truvisory</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="nav-cta">Book a Free Consultation</a>
+      </nav>
 
-        <nav class="nav-links" style="display: flex; align-items: center; gap: 25px;">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="countries.html">Countries</a>
-          <a href="industries.html">Industries</a>
-          <a href="resources.html">Resources</a>
-          <a href="why-truvisory.html">Why Us</a>
-          <a href="testimonials.html">Testimonials</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-      </div>
-
-      <!-- Right Side: Buttons -->
-      <div class="nav-actions" style="display: flex; gap: 15px; align-items: center; margin-left: 20px;">
-        <a href="login.html" class="btn btn-outline" style="padding: 12px 24px; font-weight: 500; border-color: rgba(255,255,255,0.2);">Login / Sign Up</a>
-        
-      </div>
-      
-      <div class="menu-toggle" style="margin-left: 20px;"><i class="fa-solid fa-bars"></i></div>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="menu-toggle">
+        <span class="hamburger"></span>
+      </button>
     </div>
   </header>
 
-  <main>
+    <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      </a>
+      <button class="close-menu" id="close-menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-truvisory.html">Why Truvisory</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+<main id="main-content">
     <section class="page-header" style="padding-top: 150px; text-align: center; margin-bottom: 50px;">
-        <div class="container reveal">
-            <h1 class="gradient-text">About Us</h1>
-            <h3 style="color: white; margin-top: 10px;">Truvisory — Introduction</h3>
+        <div class="container ">
+            <h1 class="hero-headline text-navy" style="font-size: 3rem; margin-bottom: 20px;">Your Partner in Building Businesses That Last</h1>
+            <p class="mb-5 max-w-700 mx-auto text-slate" style="font-size: 1.1rem; line-height: 1.8;">A multidisciplinary advisory firm helping ambitious businesses establish, run and expand — in India and across the world.</p>
+            <div class="title-underline"></div>
         </div>
     </section>
 
-    <section style="padding-bottom: 80px;">
+    <!-- Who We Are & Our Story -->
+    <section class="section-padding">
         <div class="container">
-            <!-- Introduction Section -->
-            <div class="glass-card reveal" style="padding: 40px; margin-bottom: 60px; line-height: 1.8;">
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px;">
-                    Truvisory Financial Services was founded with a simple but powerful purpose: to give new businesses and SMEs access to the same calibre of financial, legal and advisory guidance that only large corporations could once afford. We saw founders spending more time chasing compliance deadlines and deciphering tax notices than building their businesses — and we set out to change that.
-                </p>
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px;">
-                    Headquartered in Mumbai, Truvisory works with founders, family businesses and growing enterprises across India, and with companies expanding internationally into the USA, UAE, Singapore and Hong Kong. Whether you are registering your first company or opening your fifth international entity, our role is the same: to remove complexity, reduce risk, and give you clarity at every step.
-                </p>
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px;">
-                    Our name reflects our promise — <strong>True Advisory</strong>. We don't believe in one-size-fits-all templates or generic filings. Every recommendation we make is grounded in a genuine understanding of your business, your industry and your growth plans, backed by technical accuracy and full regulatory compliance.
-                </p>
-                <p style="color: var(--text-muted); font-size: 1.1rem;">
-                    From day-one incorporation to multi-country tax structuring, from monthly bookkeeping to payroll for a growing team — Truvisory is built to scale alongside you.
-                </p>
-            </div>
-
-            <!-- Team Section -->
-            <div class="section-header reveal" style="text-align: center; margin-bottom: 40px;">
-                <h2 style="font-size: 2.5rem; color: #fff;">Our Team</h2>
-                <div class="title-underline" style="margin: 15px auto;"></div>
-                <p style="color: var(--text-muted); max-width: 800px; margin: 20px auto; font-size: 1.1rem; line-height: 1.8;">
-                    Truvisory is led by professionals who bring together financial strategy, regulatory depth and hands-on execution — supported by a dedicated team of Chartered Accountants, tax specialists and compliance professionals who work as a true extension of every client's own team.
-                </p>
-            </div>
-
-            <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <div class="grid-2-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
+                <div class="">
+                    <h2 class="text-navy mb-4">Who We Are</h2>
+                    <p class="text-slate mb-3" style="line-height: 1.8;">Truvisory Financial Services Pvt. Ltd. is a business consulting and financial advisory firm built for founders who want more than compliance ticked off a checklist. We work alongside entrepreneurs, startups, SMEs and established companies to handle the financial and regulatory foundations of a business, so they can focus their energy on building it.</p>
+                    <p class="text-slate mb-4" style="line-height: 1.8;">Our team brings together Chartered Accountants, tax specialists and business consultants under one roof. This means a client doesn't need to coordinate multiple vendors to launch, run and grow a company — Truvisory manages it as one integrated engagement.</p>
+                    
+                    <h2 class="text-navy mb-4 mt-5">Mission & Vision</h2>
+                    <div style="background: rgba(14, 138, 101, 0.05); padding: 25px; border-left: 4px solid var(--emerald); margin-bottom: 20px; border-radius: 8px;">
+                        <h4 class="text-navy mb-2">Mission</h4>
+                        <p class="text-slate mb-0" style="font-size: 0.95rem;">To simplify business setup, compliance and international expansion through honest, expert advisory and dependable execution — so entrepreneurs can build with confidence.</p>
+                    </div>
+                    <div style="background: rgba(14, 138, 101, 0.05); padding: 25px; border-left: 4px solid var(--emerald); border-radius: 8px;">
+                        <h4 class="text-navy mb-2">Vision</h4>
+                        <p class="text-slate mb-0" style="font-size: 0.95rem;">To be the most trusted business advisory partner for entrepreneurs across India and the jurisdictions they choose to grow into.</p>
+                    </div>
+                </div>
                 
-                <!-- Founder Card -->
-                <div class="glass-card reveal card-hover" style="padding: 40px; border-top: 4px solid var(--primary);">
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 5px;">Nivya Jain</h3>
-                        <p style="color: var(--primary); font-weight: 600; font-size: 1.1rem;">Founder</p>
-                    </div>
-                    <p style="color: var(--text-muted); line-height: 1.7;">
-                        Nivya Jain holds a Master's degree in Marketing and Finance and leads Truvisory's overall vision, client strategy and business growth. Her dual expertise — financial discipline paired with a sharp understanding of branding, positioning and market strategy — gives Truvisory's clients an edge that goes beyond compliance. Nivya works closely with founders to ensure that every financial decision also supports their long-term brand and business goals, helping clients grow not just correctly, but competitively.
-                    </p>
+                <div class="">
+                    <h2 class="text-navy mb-4">Our Story</h2>
+                    <p class="text-slate mb-3" style="line-height: 1.8;">Truvisory Financial Services Pvt. Ltd. was incorporated in 2024, founded on a simple observation: most businesses don't fail from a lack of ambition, they stumble on the operational and regulatory decisions nobody explained to them clearly — the wrong entity structure, a missed compliance deadline, a jurisdiction chosen without proper due diligence.</p>
+                    <p class="text-slate mb-3" style="line-height: 1.8;">The company was founded by Nivya Jain, who brings hands-on corporate marketing experience from her time with organisations including Thomas Cook and Citibank. That background in brand-building and customer-facing business strategy shapes how Truvisory approaches advisory today — with equal focus on financial compliance and commercial growth.</p>
+                    <p class="text-slate mb-3" style="line-height: 1.8;">Backed by a team of Chartered Accountants, Nivya built Truvisory to combine strong financial and regulatory expertise with a practical, growth-oriented perspective. What began as a focused advisory practice has grown into a full-spectrum business consulting firm, supporting clients from their first incorporation filing to their entry into international markets such as the UAE, Singapore, Hong Kong, the UK and the USA.</p>
+                    <p class="text-slate font-weight-600" style="line-height: 1.8; color: var(--navy);">The name itself reflects our founding principle — advisory should be true: transparent in its recommendations, practical in its execution and accountable for its outcomes.</p>
                 </div>
-
-                <!-- CA Card -->
-                <div class="glass-card reveal card-hover delay-1" style="padding: 40px; border-top: 4px solid var(--primary);">
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 5px;">CA Manish Parasmal Jain</h3>
-                        <p style="color: var(--primary); font-weight: 600; font-size: 1.1rem;">Chartered Accountant</p>
-                    </div>
-                    <p style="color: var(--text-muted); line-height: 1.7;">
-                        CA Manish Parasmal Jain heads Truvisory's taxation, accounting and compliance practice. With deep, hands-on expertise across Indian and international tax frameworks, Manish ensures that every client engagement is technically sound, fully compliant, and delivered on time. His experience spans direct and indirect taxation, corporate tax structuring, and regulatory filings across multiple jurisdictions — giving clients confidence that their finances are in expert hands.
-                    </p>
-                </div>
-
             </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="section-padding" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="text-navy text-center mb-5 ">Core Values</h2>
+            <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div class="glass-card  card-hover" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                    <div class="card-icon" style="color: var(--emerald); font-size: 2rem; margin-bottom: 15px;"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="text-navy mb-2">Integrity</h4>
+                    <p class="text-slate" style="font-size: 0.9rem;">We recommend what is right for your business, not what is easiest for us.</p>
+                </div>
+                <div class="glass-card  card-hover delay-1" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                    <div class="card-icon" style="color: var(--emerald); font-size: 2rem; margin-bottom: 15px;"><i class="fa-solid fa-eye"></i></div>
+                    <h4 class="text-navy mb-2">Transparency</h4>
+                    <p class="text-slate" style="font-size: 0.9rem;">Clear timelines, clear costs, no hidden fine print.</p>
+                </div>
+                <div class="glass-card  card-hover delay-2" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                    <div class="card-icon" style="color: var(--emerald); font-size: 2rem; margin-bottom: 15px;"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h4 class="text-navy mb-2">Expertise</h4>
+                    <p class="text-slate" style="font-size: 0.9rem;">Every engagement is led by qualified professionals, not generalists.</p>
+                </div>
+                <div class="glass-card  card-hover" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                    <div class="card-icon" style="color: var(--emerald); font-size: 2rem; margin-bottom: 15px;"><i class="fa-solid fa-handshake"></i></div>
+                    <h4 class="text-navy mb-2">Partnership</h4>
+                    <p class="text-slate" style="font-size: 0.9rem;">We measure success by your business's growth, not just a closed ticket.</p>
+                </div>
+                <div class="glass-card  card-hover delay-1" style="padding: 30px; border-radius: 12px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                    <div class="card-icon" style="color: var(--emerald); font-size: 2rem; margin-bottom: 15px;"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h4 class="text-navy mb-2">Innovation</h4>
+                    <p class="text-slate" style="font-size: 0.9rem;">We continually adapt our processes and tools to serve clients faster and better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-navy text-center mb-5 ">Leadership</h2>
+            
+            <div class="grid-2-col" style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-radius: 12px; padding: 40px; margin-bottom: 40px;">
+                <div class=" text-center">
+                    <img src="https://placehold.co/300x300/F8FAFC/0F172A?text=Nivya+Jain" alt="Nivya Jain" style="width: 100%; max-width: 250px; border-radius: 50%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    <h3 class="text-navy">Nivya Jain</h3>
+                    <p class="text-emerald font-weight-600 mb-2">Founder</p>
+                </div>
+                <div class="">
+                    <p class="text-slate mb-3" style="line-height: 1.8;">Nivya Jain founded Truvisory Financial Services in 2024, bringing hands-on experience in corporate marketing from leading organisations including Thomas Cook and Citibank. Her background gives Truvisory a distinctive edge — the ability to advise businesses on brand-building and growth strategy, alongside strong financial and compliance fundamentals.</p>
+                    <p class="text-slate mb-3" style="line-height: 1.8;">Nivya leads the firm's overall vision and works closely with a dedicated team of Chartered Accountants to deliver advisory that is both technically sound and commercially relevant.</p>
+                    <div style="background: rgba(14, 138, 101, 0.05); padding: 15px; border-radius: 6px; border: 1px dashed var(--emerald); font-size: 0.9rem;" class="text-navy">
+                        <i class="fa-solid fa-camera mb-2" style="color: var(--emerald);"></i> (Add a professional photograph and any additional qualifications/credentials to complete this profile.)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center max-w-700 mx-auto  mb-5">
+                <p class="text-slate" style="line-height: 1.8;">Truvisory's Chartered Accountants bring deep technical expertise across taxation, audit, corporate law and cross-border business structuring.</p>
+            </div>
+            
+            <!-- Additional Leadership Placeholder -->
+            <div class="grid-2-col" style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-radius: 12px; padding: 40px;">
+                <div class=" text-center">
+                    <div style="width: 100%; max-width: 250px; aspect-ratio: 1; border-radius: 50%; background: #f8fafc; border: 2px dashed #cbd5e1; margin: 0 auto 20px auto; display: flex; align-items: center; justify-content: center; color: #94a3b8;">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                    </div>
+                    <h3 class="text-navy">[Name]</h3>
+                    <p class="text-emerald font-weight-600 mb-1">[Designation]</p>
+                    <p class="text-slate" style="font-size: 0.9rem;">[Qualification]</p>
+                </div>
+                <div class="">
+                    <p class="text-slate mb-3" style="line-height: 1.8;">(Insert additional individual leadership profiles here — name, designation, qualification, a 2–3 line bio and a professional photograph for each partner/director.)</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Truvisory & Global Presence -->
+    <section class="section-padding" style="background: var(--navy); color: white;">
+        <div class="container">
+            <div class="grid-2-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+                <div class="">
+                    <h2 class="mb-4" style="color: white;">Why Truvisory</h2>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.8); line-height: 1.8;">We don't sell services in isolation. Before recommending a solution, we take the time to understand your business stage, goals and constraints — and build a plan around that.</p>
+                    <ul style="list-style-type: none; padding: 0; color: rgba(255,255,255,0.9);">
+                        <li class="mb-3" style="display: flex; align-items: start;"><i class="fa-solid fa-check text-emerald" style="margin-right: 15px; margin-top: 5px;"></i> One firm for incorporation, accounting, tax, compliance, IP and growth services</li>
+                        <li class="mb-3" style="display: flex; align-items: start;"><i class="fa-solid fa-check text-emerald" style="margin-right: 15px; margin-top: 5px;"></i> Direct access to Chartered Accountants, not just relationship managers</li>
+                        <li class="mb-3" style="display: flex; align-items: start;"><i class="fa-solid fa-check text-emerald" style="margin-right: 15px; margin-top: 5px;"></i> Advisory grounded in real jurisdiction knowledge across six countries</li>
+                        <li style="display: flex; align-items: start;"><i class="fa-solid fa-check text-emerald" style="margin-right: 15px; margin-top: 5px;"></i> A long-term advisory relationship, not a transactional service</li>
+                    </ul>
+                </div>
+                
+                <div class="">
+                    <h2 class="mb-4" style="color: white;">Global Presence</h2>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.8); line-height: 1.8;">Truvisory supports business establishment and ongoing compliance across India, UAE, Singapore, United Kingdom, Hong Kong and the United States — through a combination of in-house expertise and trusted local partners in each jurisdiction, helping clients get accurate, on-ground guidance wherever they choose to grow.</p>
+                    
+                    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 30px;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem;">🇮🇳 India</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem;">🇦🇪 UAE</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem;">🇸🇬 Singapore</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem;">🇬🇧 UK</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem;">🇭🇰 Hong Kong</span>
+                        <span style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem;">🇺🇸 USA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding text-center">
+        <div class="container ">
+            <h2 class="text-navy mb-4">Talk to Our Advisory Team</h2>
+            <a href="contact.html" class="btn btn-primary" style="padding: 15px 35px; font-size: 1.1rem;">Book a Free Consultation</a>
         </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  
-    <!-- MEGA FOOTER -->
-    <footer class="mega-footer">
-        <div class="container">
-            <div class="footer-top">
-                <!-- Column 1 -->
-                <div class="footer-col">
-                    <div class="footer-brand">
-                        <a href="index.html">
-                            <img src="assets/images/logo.png" alt="Truvisory Logo" style="height: 100px; width: auto; transform: scale(2.6); transform-origin: left center; margin-right: 100px; object-fit: contain;">
-                        </a>
-                        <p style="margin-top: 15px;">Your trusted partner for Global Business Setup, Company Incorporation, Taxation, Accounting, Compliance, Payroll, and Business Advisory.</p>
-                    </div>
-                    <ul class="footer-contact-list">
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Corporate Office, Mumbai, India</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            <span>+91 99304 26774</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>truvisoryfinance@gmail.com</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="newsletter-box">
-                        <h5>Stay Updated</h5>
-                        <p style="font-size: 0.85rem;">Tax Changes & Compliance Alerts</p>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Email Address">
-                            <button type="button">Subscribe</button>
-                        </div>
-                    </div>
-                    
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Column 2 -->
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="industries.html">Industries</a></li>
-                        <li><a href="countries.html">Global Presence</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="why-truvisory.html">Why Us</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="contact.html">Careers</a></li>
-                    </ul>
-                    
-                    <h4 style="margin-top: 30px;">Resources</h4>
-                    <ul>
-                        <li><a href="resources/business-guides.html">Business Guides</a></li>
-                        <li><a href="resources/tax-calendar.html">Tax Calendar</a></li>
-                        <li><a href="resources/compliance-calendar.html">Compliance Calendar</a></li>
-                        <li><a href="resources/brochures.html">Download Brochures</a></li>
-                        <li><a href="resources/success-stories.html">Success Stories</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 3 -->
-                <div class="footer-col">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="services/company-incorporation.html">Company Incorporation</a></li>
-                        <li><a href="services/overseas-business-setup.html">Overseas Business Setup</a></li>
-                        <li><a href="services/international-tax-planning.html">International Tax Planning</a></li>
-                        <li><a href="services/gst-and-vat.html">GST & VAT</a></li>
-                        <li><a href="services/corporate-tax.html">Corporate Tax</a></li>
-                        <li><a href="services/accounting-and-bookkeeping.html">Accounting & Bookkeeping</a></li>
-                        <li><a href="services/payroll-services.html">Payroll Services</a></li>
-                        <li><a href="services/compliance-management.html">Compliance Management</a></li>
-                        <li><a href="services/virtual-cfo.html">Virtual CFO</a></li>
-                        <li><a href="services/business-advisory.html">Business Advisory</a></li>
-                        <li><a href="services/franchise-expansion.html">Franchise Expansion</a></li>
-                        <li><a href="services/business-structuring.html">Business Structuring</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 4 -->
-                <div class="footer-col">
-                    <h4>Industries We Serve</h4>
-                    <ul>
-                        <li><a href="industries.html">Startups & SMEs</a></li>
-                        <li><a href="industries.html">Large Enterprises</a></li>
-                        <li><a href="industries/manufacturing.html">Manufacturing</a></li>
-                        <li><a href="industries/healthcare.html">Healthcare</a></li>
-                        <li><a href="industries.html">Retail & E-commerce</a></li>
-                        <li><a href="industries/technology.html">Technology</a></li>
-                        <li><a href="industries/hospitality.html">Hospitality</a></li>
-                        <li><a href="industries/logistics.html">Logistics</a></li>
-                        <li><a href="industries.html">Construction & Real Estate</a></li>
-                        <li><a href="industries/financial-services.html">Financial Services</a></li>
-                    </ul>
-                    
-                    <h4 style="margin-top: 30px;">Countries We Support</h4>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">India</a>
-                        <a href="countries/uae.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">UAE</a>
-                        <a href="countries/usa.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">USA</a>
-                        <a href="countries/singapore.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Singapore</a>
-                        <a href="countries/hong-kong.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Hong Kong</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">UK</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Canada</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Australia</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Saudi Arabia</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-badges">
-                <div class="badge-item"><i class="fa-solid fa-certificate"></i> ISO Certified</div>
-                <div class="badge-item"><i class="fa-solid fa-shield-halved"></i> Data Privacy Compliance</div>
-                <div class="badge-item"><i class="fa-solid fa-lock"></i> Secure Payments</div>
-                <div class="badge-item"><i class="fa-solid fa-landmark"></i> Government Registered</div>
-                <div class="badge-item"><i class="fa-solid fa-building-circle-check"></i> MSME/Udyam Registered</div>
-            </div>
-            
-            <div class="footer-bottom-mega">
-                <div>&copy; 2026 Truvisory Financial Services. All Rights Reserved.</div>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Cookie Policy</a>
-                    <a href="#">Disclaimer</a>
-                    <a href="#">Sitemap</a>
-                </div>
-            </div>
+
+
+  <footer class="footer section-white border-top-light" style="padding-top: 60px; padding-bottom: 30px;">
+    <div class="container">
+      <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px;">
+        
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="index.html" class="link-navy">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="link-navy">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="link-navy">Services</a></li>
+            <li class="mb-2"><a href="why-truvisory.html" class="link-navy">Why Truvisory</a></li>
+            <li class="mb-2"><a href="testimonials.html" class="link-navy">Testimonials</a></li>
+            <li class="mb-2"><a href="contact.html" class="link-navy">Contact Us</a></li>
+          </ul>
         </div>
-    </footer>
+        
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Services</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Business Setup</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Accounting & Bookkeeping</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Taxation</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Payroll</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Compliance</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Trademark & Patent</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Virtual CFO</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Countries</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">India</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">UAE</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Singapore</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">UK</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Hong Kong</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">USA</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Resources</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Featured Articles</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Business Guides</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Country Guides</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Compliance Updates</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Downloads</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 5 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Contact</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2">📞 <a href="tel:+919930426774" class="link-teal">+91 99304 26774</a></li>
+            <li class="mb-2">✉ <a href="mailto:truvisoryfinance@gmail.com" class="link-teal" style="word-break: break-all;">truvisoryfinance@gmail.com</a></li>
+            <li class="mb-2">📍 Mumbai, India</li>
+            <li class="mb-2">🕒 Mon - Fri, 9am - 6pm</li>
+          </ul>
+        </div>
+
+        <!-- Column 6 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Legal Pages</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Terms & Conditions</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Disclaimer</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Cookie Policy</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 7 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Social Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">LinkedIn</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Facebook</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Instagram</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">X (Twitter)</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">YouTube</a></li>
+            <li class="mb-2"><a href="https://wa.me/919930426774?text=Hello%20Truvisory%20Financial%20Services,%20I%20would%20like%20to%20know%20more%20about%20your%20business%20advisory%20and%20financial%20services." class="link-navy" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom mt-5 text-center" style="border-top: 1px solid var(--card-border); padding-top: 20px;">
+        <a href="index.html" class="logo footer-logo mb-3 d-inline-block">
+          <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+        </a>
+        <p class="text-slate">&copy; 2026 Truvisory Financial Services Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
     
     <!-- Floating Widgets -->
     <a href="https://wa.me/919930426774" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">

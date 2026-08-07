@@ -4,85 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="title" content="Testimonials - TRUVISORY FINANCIAL SERVICES">
-  <meta name="description" content>Read what our clients say about their experience with Truvisory Financial Services. Trusted by businesses across India, UAE, Singapore, Hong Kong and USA.">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Read what our clients say about their experience with Truvisory Financial Services. Trusted by businesses across India, UAE, Singapore, Hong Kong and USA.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/booking.css">
+  <link rel="stylesheet" href="assets/css/mega-menu.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <title>Testimonials - TRUVISORY FINANCIAL SERVICES</title>
+  <title>Success Stories | Truvisory</title>
 </head>
-<body class="dark-theme">
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+<body>
   
-          <header class="glass-nav" id="navbar">
-    <div class="container nav-container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  
+          <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" style="display: flex; align-items: center;">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 200px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      </a>
       
-      <!-- Left Side: Logo and Navigation Links -->
-      <div class="nav-left-group" style="display: flex; align-items: center;">
-        <a href="index.html" class="logo" style="display: flex; align-items: center; margin-right: 40px;">
-          <img src="assets/images/logo.png" alt="Truvisory Logo" style="height: 160px; width: auto; object-fit: contain;">
-        </a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="why-truvisory.html">Why Truvisory</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="nav-cta">Book a Free Consultation</a>
+      </nav>
 
-        <nav class="nav-links" style="display: flex; align-items: center; gap: 25px;">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="countries.html">Countries</a>
-          <a href="industries.html">Industries</a>
-          <a href="resources.html">Resources</a>
-          <a href="why-truvisory.html">Why Us</a>
-          <a href="testimonials.html">Testimonials</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-      </div>
-
-      <!-- Right Side: Buttons -->
-      <div class="nav-actions" style="display: flex; gap: 15px; align-items: center; margin-left: 20px;">
-        <a href="login.html" class="btn btn-outline" style="padding: 12px 24px; font-weight: 500; border-color: rgba(255,255,255,0.2);">Login / Sign Up</a>
-        
-      </div>
-      
-      <div class="menu-toggle" style="margin-left: 20px;"><i class="fa-solid fa-bars"></i></div>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="menu-toggle">
+        <span class="hamburger"></span>
+      </button>
     </div>
   </header>
 
-  
-  
-  <main id="main-content">
+    <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      </a>
+      <button class="close-menu" id="close-menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-truvisory.html">Why Truvisory</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+<main id="main-content">
     <section class="page-header" style="padding-top: 150px; text-align: center; margin-bottom: 50px;">
         <div class="container reveal">
-            <h1 class="gradient-text">Client Testimonials</h1>
-            <h3 style="color: white; margin-top: 10px;">Hear From Businesses We've Helped Grow</h3>
+            <h1 class="hero-headline text-navy fade-up" style="font-size: 3rem; margin-bottom: 20px;">Client Testimonials</h1>
+            <p class="mb-5 max-w-700 mx-auto text-slate fade-up" style="font-size: 1.1rem; line-height: 1.8;">Hear From Businesses We've Helped Grow.</p>
+            <div class="title-underline fade-up"></div>
         </div>
     </section>
 
-    <section style="padding-bottom: 80px;">
-        <div class="container">
+    <section style="padding-bottom: 80px; background: #f8fafc;">
+        <div class="container section-padding">
             
-            <!-- Real Testimonials Grid (Currently Empty awaiting original data) -->
-            <div class="grid-2" id="testimonialsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; margin-bottom: 60px;">
+            <!-- Real Testimonials Grid -->
+            <div class="grid-2 fade-up" id="testimonialsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-bottom: 60px;">
                 <!-- Real client data will be fetched and injected here by Supabase -->
-                <div class="glass-card" style="padding: 40px; text-align: center; grid-column: 1 / -1;">
-                    <i class="fa-solid fa-comments" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 20px;"></i>
-                    <h3 style="color: var(--text-muted);">No reviews yet.</h3>
-                    <p style="color: var(--text-muted);">Be the first to share your experience with Truvisory!</p>
+                <div class="glass-card" style="padding: 40px; text-align: center; grid-column: 1 / -1; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-radius: 12px;">
+                    <i class="fa-solid fa-comments" style="font-size: 3rem; color: #cbd5e1; margin-bottom: 20px;"></i>
+                    <h3 class="text-navy">No reviews yet.</h3>
+                    <p class="text-slate">Be the first to share your experience with Truvisory!</p>
                 </div>
             </div>
 
             <!-- Submit Review Section -->
-            <div class="glass-card reveal" style="max-width: 800px; margin: 0 auto; padding: 40px; border-top: 4px solid var(--primary);">
-                <h3 style="color: #fff; margin-bottom: 20px; font-size: 1.5rem; text-align: center;">Leave a Review</h3>
+            <div class="glass-card fade-up" style="max-width: 800px; margin: 0 auto; padding: 40px; border-top: 4px solid var(--emerald); background: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                <h3 class="text-navy" style="margin-bottom: 20px; font-size: 1.8rem; text-align: center;">Leave a Review</h3>
                 
                 <!-- Not Logged In State -->
                 <div id="notLoggedInUI" style="text-align: center; padding: 30px 0;">
-                    <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px;">You must be logged in to submit a review and help us maintain authenticity.</p>
+                    <p class="text-slate" style="font-size: 1.1rem; margin-bottom: 20px;">You must be logged in to submit a review and help us maintain authenticity.</p>
                     <a href="login.html" class="btn btn-primary" style="padding: 12px 30px;">Login to Review</a>
                 </div>
 
                 <!-- Logged In State (Hidden by default) -->
                 <div id="loggedInUI" style="display: none;">
                     <form id="reviewForm">
-                        <div style="margin-bottom: 20px;">
-                            <label style="display: block; color: #fff; margin-bottom: 10px;">Your Rating</label>
-                            <div style="color: #FFD700; font-size: 1.5rem; cursor: pointer;">
+                        <div style="margin-bottom: 25px;">
+                            <label class="text-navy font-weight-600" style="display: block; margin-bottom: 10px;">Your Rating</label>
+                            <div style="color: #FFD700; font-size: 1.8rem; cursor: pointer;">
                                 <i class="fa-regular fa-star star-rating"></i>
                                 <i class="fa-regular fa-star star-rating"></i>
                                 <i class="fa-regular fa-star star-rating"></i>
@@ -90,181 +101,125 @@
                                 <i class="fa-regular fa-star star-rating"></i>
                             </div>
                         </div>
-                        <div style="margin-bottom: 20px;">
-                            <label style="display: block; color: #fff; margin-bottom: 10px;">Your Review</label>
-                            <textarea rows="5" placeholder="Share your experience working with Truvisory..." style="width: 100%; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; color: #fff; font-family: inherit; resize: vertical;" required></textarea>
+                        <div style="margin-bottom: 25px;">
+                            <label class="text-navy font-weight-600" style="display: block; margin-bottom: 10px;">Your Review</label>
+                            <textarea rows="5" placeholder="Share your experience working with Truvisory..." style="width: 100%; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; color: var(--navy); font-family: inherit; resize: vertical;" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Review</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.1rem;">Submit Review</button>
                     </form>
                 </div>
             </div>
-
         </div>
     </section>
-
-    <script>
-        // Check Login State
-        document.addEventListener('DOMContentLoaded', function() {
-            var isLoggedIn = localStorage.getItem('isLoggedIn');
-            if (isLoggedIn === 'true') {
-                document.getElementById('notLoggedInUI').style.display = 'none';
-                document.getElementById('loggedInUI').style.display = 'block';
-            }
-        });
-
-        // Handle Form Submission
-        document.getElementById('reviewForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert("Thank you! Your review has been submitted securely.");
-            this.reset();
-        });
-    </script>
   </main>
+
 
 
 
   
     <!-- MEGA FOOTER -->
-    <footer class="mega-footer">
-        <div class="container">
-            <div class="footer-top">
-                <!-- Column 1 -->
-                <div class="footer-col">
-                    <div class="footer-brand">
-                        <a href="index.html">
-                            <img src="assets/images/logo.png" alt="Truvisory Logo" style="height: 100px; width: auto; transform: scale(2.6); transform-origin: left center; margin-right: 100px; object-fit: contain;">
-                        </a>
-                        <p style="margin-top: 15px;">Your trusted partner for Global Business Setup, Company Incorporation, Taxation, Accounting, Compliance, Payroll, and Business Advisory.</p>
-                    </div>
-                    <ul class="footer-contact-list">
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Corporate Office, Mumbai, India</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            <span>+91 99304 26774</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>truvisoryfinance@gmail.com</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="newsletter-box">
-                        <h5>Stay Updated</h5>
-                        <p style="font-size: 0.85rem;">Tax Changes & Compliance Alerts</p>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Email Address">
-                            <button type="button">Subscribe</button>
-                        </div>
-                    </div>
-                    
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Column 2 -->
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="industries.html">Industries</a></li>
-                        <li><a href="countries.html">Global Presence</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="why-truvisory.html">Why Us</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="contact.html">Careers</a></li>
-                    </ul>
-                    
-                    <h4 style="margin-top: 30px;">Resources</h4>
-                    <ul>
-                        <li><a href="resources/business-guides.html">Business Guides</a></li>
-                        <li><a href="resources/tax-calendar.html">Tax Calendar</a></li>
-                        <li><a href="resources/compliance-calendar.html">Compliance Calendar</a></li>
-                        <li><a href="resources/brochures.html">Download Brochures</a></li>
-                        <li><a href="resources/success-stories.html">Success Stories</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 3 -->
-                <div class="footer-col">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="services/company-incorporation.html">Company Incorporation</a></li>
-                        <li><a href="services/overseas-business-setup.html">Overseas Business Setup</a></li>
-                        <li><a href="services/international-tax-planning.html">International Tax Planning</a></li>
-                        <li><a href="services/gst-and-vat.html">GST & VAT</a></li>
-                        <li><a href="services/corporate-tax.html">Corporate Tax</a></li>
-                        <li><a href="services/accounting-and-bookkeeping.html">Accounting & Bookkeeping</a></li>
-                        <li><a href="services/payroll-services.html">Payroll Services</a></li>
-                        <li><a href="services/compliance-management.html">Compliance Management</a></li>
-                        <li><a href="services/virtual-cfo.html">Virtual CFO</a></li>
-                        <li><a href="services/business-advisory.html">Business Advisory</a></li>
-                        <li><a href="services/franchise-expansion.html">Franchise Expansion</a></li>
-                        <li><a href="services/business-structuring.html">Business Structuring</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 4 -->
-                <div class="footer-col">
-                    <h4>Industries We Serve</h4>
-                    <ul>
-                        <li><a href="industries.html">Startups & SMEs</a></li>
-                        <li><a href="industries.html">Large Enterprises</a></li>
-                        <li><a href="industries/manufacturing.html">Manufacturing</a></li>
-                        <li><a href="industries/healthcare.html">Healthcare</a></li>
-                        <li><a href="industries.html">Retail & E-commerce</a></li>
-                        <li><a href="industries/technology.html">Technology</a></li>
-                        <li><a href="industries/hospitality.html">Hospitality</a></li>
-                        <li><a href="industries/logistics.html">Logistics</a></li>
-                        <li><a href="industries.html">Construction & Real Estate</a></li>
-                        <li><a href="industries/financial-services.html">Financial Services</a></li>
-                    </ul>
-                    
-                    <h4 style="margin-top: 30px;">Countries We Support</h4>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">India</a>
-                        <a href="countries/uae.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">UAE</a>
-                        <a href="countries/usa.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">USA</a>
-                        <a href="countries/singapore.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Singapore</a>
-                        <a href="countries/hong-kong.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Hong Kong</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">UK</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Canada</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Australia</a>
-                        <a href="countries.html" class="badge-item" style="border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem;">Saudi Arabia</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-badges">
-                <div class="badge-item"><i class="fa-solid fa-certificate"></i> ISO Certified</div>
-                <div class="badge-item"><i class="fa-solid fa-shield-halved"></i> Data Privacy Compliance</div>
-                <div class="badge-item"><i class="fa-solid fa-lock"></i> Secure Payments</div>
-                <div class="badge-item"><i class="fa-solid fa-landmark"></i> Government Registered</div>
-                <div class="badge-item"><i class="fa-solid fa-building-circle-check"></i> MSME/Udyam Registered</div>
-            </div>
-            
-            <div class="footer-bottom-mega">
-                <div>&copy; 2026 Truvisory Financial Services. All Rights Reserved.</div>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Cookie Policy</a>
-                    <a href="#">Disclaimer</a>
-                    <a href="#">Sitemap</a>
-                </div>
-            </div>
+    <footer class="footer section-white border-top-light" style="padding-top: 60px; padding-bottom: 30px;">
+    <div class="container">
+      <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px;">
+        
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="index.html" class="link-navy">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="link-navy">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="link-navy">Services</a></li>
+            <li class="mb-2"><a href="why-truvisory.html" class="link-navy">Why Truvisory</a></li>
+            <li class="mb-2"><a href="testimonials.html" class="link-navy">Testimonials</a></li>
+            <li class="mb-2"><a href="contact.html" class="link-navy">Contact Us</a></li>
+          </ul>
         </div>
-    </footer>
+        
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Services</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Business Setup</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Accounting & Bookkeeping</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Taxation</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Payroll</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Compliance</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Trademark & Patent</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Virtual CFO</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Countries</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">India</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">UAE</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Singapore</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">UK</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Hong Kong</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">USA</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Resources</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Featured Articles</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Business Guides</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Country Guides</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Compliance Updates</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Downloads</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 5 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Contact</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2">📞 <a href="tel:+919930426774" class="link-teal">+91 99304 26774</a></li>
+            <li class="mb-2">✉ <a href="mailto:truvisoryfinance@gmail.com" class="link-teal" style="word-break: break-all;">truvisoryfinance@gmail.com</a></li>
+            <li class="mb-2">📍 Mumbai, India</li>
+            <li class="mb-2">🕒 Mon - Fri, 9am - 6pm</li>
+          </ul>
+        </div>
+
+        <!-- Column 6 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Legal Pages</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Terms & Conditions</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Disclaimer</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Cookie Policy</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 7 -->
+        <div class="footer-col">
+          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Social Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li class="mb-2"><a href="#" class="link-navy">LinkedIn</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Facebook</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">Instagram</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">X (Twitter)</a></li>
+            <li class="mb-2"><a href="#" class="link-navy">YouTube</a></li>
+            <li class="mb-2"><a href="https://wa.me/919930426774?text=Hello%20Truvisory%20Financial%20Services,%20I%20would%20like%20to%20know%20more%20about%20your%20business%20advisory%20and%20financial%20services." class="link-navy" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom mt-5 text-center" style="border-top: 1px solid var(--card-border); padding-top: 20px;">
+        <a href="index.html" class="logo footer-logo mb-3 d-inline-block">
+          <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+        </a>
+        <p class="text-slate">&copy; 2026 Truvisory Financial Services Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
     
     <!-- Floating Widgets -->
     <a href="https://wa.me/919930426774" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
