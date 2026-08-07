@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+with open('seo-landing-pages.html', 'r', encoding='utf-8') as f:
+    content = f.read()
+
+# Let's recreate seo-landing-pages.html cleanly
+new_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -165,7 +169,7 @@
       </div>
       <div class="row mt-4 pt-4 border-top border-secondary text-center">
         <div class="col-12">
-          <p class="mb-0 text-light-gray" style="opacity: 0.7;">&copy; 2026 Truvisory Financial Services Pvt. Ltd. All rights reserved.</p>
+          <p class="mb-0 text-light-gray" style="opacity: 0.7;">&copy; 2026 Truvisory Financial Services. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -179,3 +183,7 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+"""
+
+with open('seo-landing-pages.html', 'w', encoding='utf-8') as f:
+    f.write(new_html)
