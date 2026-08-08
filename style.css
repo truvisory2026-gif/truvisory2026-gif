@@ -3,9 +3,9 @@
 :root {
   --bg-cream: #FCFCFA; /* Warm off-white */
   --bg-white: #FFFFFF;
-  --text-main: #1F2937; /* Dark gray/black */
-  --text-muted: #6B7280;
-  --text-light: #9CA3AF;
+  --text-main: #000000;
+  --text-muted: #1a1a1a;
+  --text-light: #4B5563;
   
   --accent-gold: #EAB308;
   --accent-gold-hover: #CA8A04;
