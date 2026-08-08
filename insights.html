@@ -26,7 +26,8 @@
         <a href="contact.html" class="">Contact</a>
         <a href="seo-landing-pages.html" class="">SEO Landing Pages</a>
       </nav>
-      <a href="contact.html" class="btn btn-gold">Book Consultation</a>
+            <a href="contact.html" class="btn btn-gold desktop-only">Book Consultation</a>
+      <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
   </header>
 
@@ -138,5 +139,42 @@
     </div>
   </footer>
 
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <img src="assets/images/logo.png" alt="Truvisory Services" style="height: 40px;">
+      <button class="close-mobile-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About Us</a>
+        <a href="services.html" class="">Services</a>
+        <a href="countries.html" class="">Countries</a>
+        <a href="industries.html" class="">Industries</a>
+        <a href="insights.html" class="active">Insights</a>
+        <a href="success-stories.html" class="">Success Stories</a>
+        <a href="contact.html" class="">Contact</a>
+        <a href="seo-landing-pages.html" class="">SEO Landing Pages</a>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      const closeBtn = document.getElementById('closeBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      
+      if (menuBtn && mobileNav && closeBtn) {
+        menuBtn.addEventListener('click', () => {
+          mobileNav.classList.add('active');
+        });
+        
+        closeBtn.addEventListener('click', () => {
+          mobileNav.classList.remove('active');
+        });
+      }
+    });
+  </script>
 </body>
 </html>
