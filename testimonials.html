@@ -3,345 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Testimonials - TRUVISORY FINANCIAL SERVICES">
-  <meta name="description" content="Read what our clients say about their experience with Truvisory Financial Services. Trusted by businesses across India, UAE, Singapore, Hong Kong and USA.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/css/booking.css">
-  <link rel="stylesheet" href="assets/css/mega-menu.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Success Stories | Truvisory</title>
+  <meta name="description" content="Real business results.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-          <!-- Header -->
   <header class="header">
     <div class="container header-container">
-      <a href="index.html" class="logo" style="display: flex; align-items: center;">
-        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 200px; max-height: none; width: auto; object-fit: contain; max-width: none;">
+      <a href="index.html" class="logo">
+        <span style="font-weight: 700; font-size: 1.25rem; letter-spacing: 1px; color: var(--text-main);">TRUVISORY</span>
       </a>
-      
       <nav class="desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="countries.html">Countries We Serve</a>
-        <a href="industries.html">Industries</a>
-        <a href="resources.html">Insights &amp; Resources</a>
-        <a href="testimonials.html">Success Stories</a>
-        <a href="contact.html">Contact</a>
-        <a href="seo-landing-pages.html">SEO Landing Pages</a>
-        <a href="contact.html" class="nav-cta">Book a Free Consultation</a>
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About Us</a>
+        <a href="services.html" class="">Services</a>
+        <a href="countries.html" class="">Countries</a>
+        <a href="industries.html" class="">Industries</a>
+        <a href="testimonials.html" class="active">Insights</a>
       </nav>
-
-      <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="menu-toggle">
-        <span class="hamburger"></span>
-      </button>
+      <a href="contact.html" class="btn btn-gold">Book Consultation</a>
     </div>
   </header>
 
-    <!-- Mobile Drawer -->
-  <div class="mobile-drawer" id="mobile-drawer">
-    <div class="drawer-header">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
-      </a>
-      <button class="close-menu" id="close-menu">&times;</button>
+  
+<main>
+  <section class="section section-white">
+    <div class="container text-center mb-6">
+      <h1 class="mb-2">Real Businesses. Real Results.</h1>
+      <p style="font-size: 1.125rem; color: var(--text-muted);">How we've helped founders navigate incorporation and expansion.</p>
     </div>
-    <div class="drawer-links">
-        <a href="index.html" class="drawer-link">Home</a>
-        <a href="about.html" class="drawer-link">About Us</a>
-        <a href="services.html" class="drawer-link">Services</a>
-        <a href="countries.html" class="drawer-link">Countries We Serve</a>
-        <a href="industries.html" class="drawer-link">Industries</a>
-        <a href="resources.html" class="drawer-link">Insights &amp; Resources</a>
-        <a href="testimonials.html" class="drawer-link">Success Stories</a>
-        <a href="contact.html" class="drawer-link">Contact</a>
-        <a href="seo-landing-pages.html" class="drawer-link">SEO Landing Pages</a>
-        <a href="contact.html" class="btn btn-primary w-100 text-center mt-4">Book a Free Consultation</a>
+    
+    <div class="container grid-2">
+      <div class="service-card">
+        <h3 class="mb-3">A Bengaluru-based SaaS Startup Enters the Singapore Market</h3>
+        <p><strong>The Challenge:</strong> The founders needed a Singapore entity to serve APAC clients but had no local presence.</p>
+        <p class="mt-3"><strong>Our Approach:</strong> Truvisory managed entity incorporation, nominee director arrangement, and banking.</p>
+        <p style="font-style: italic; margin-top: 16px; color: var(--text-main);">"Truvisory made our Singapore expansion completely painless. Highly recommended."</p>
       </div>
-  </div>
+    </div>
+  </section>
+</main>
 
-<main id="main-content">
-    <section class="page-header" style="padding-top: 150px; text-align: center; margin-bottom: 50px;">
-        <div class="container">
-            <h1 class="hero-headline text-navy" style="font-size: 3rem; margin-bottom: 20px;">Client Testimonials</h1>
-            <p class="mb-5 max-w-700 mx-auto text-slate" style="font-size: 1.1rem; line-height: 1.8;">Hear From Businesses We've Helped Grow.</p>
-            <div class="title-underline"></div>
-        </div>
-    </section>
 
-    <section style="padding-bottom: 80px; background: #f8fafc;">
-        <div class="container section-padding">
-            
-            <!-- Real Testimonials Grid -->
-            <div class="grid-2" id="testimonialsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-bottom: 60px;">
-                <!-- Real client data will be fetched and injected here by Supabase -->
-                <div class="glass-card" style="padding: 40px; text-align: center; grid-column: 1 / -1; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-radius: 12px;">
-                    <i class="fa-solid fa-comments" style="font-size: 3rem; color: #cbd5e1; margin-bottom: 20px;"></i>
-                    <h3 class="text-navy">No reviews yet.</h3>
-                    <p class="text-slate">Be the first to share your experience with Truvisory!</p>
-                </div>
-            </div>
-
-            <!-- Submit Review Section -->
-            <div class="glass-card" style="max-width: 800px; margin: 0 auto; padding: 40px; border-top: 4px solid var(--emerald); background: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-                <h3 class="text-navy" style="margin-bottom: 20px; font-size: 1.8rem; text-align: center;">Leave a Review</h3>
-                
-                <form id="reviewForm">
-                    <div style="margin-bottom: 25px;">
-                        <label class="text-navy font-weight-600" style="display: block; margin-bottom: 10px;">Your Name</label>
-                        <input type="text" id="reviewerName" placeholder="Enter your full name" style="width: 100%; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; color: var(--navy); font-family: inherit;" required>
-                    </div>
-                    <div style="margin-bottom: 25px;">
-                        <label class="text-navy font-weight-600" style="display: block; margin-bottom: 10px;">Your Rating</label>
-                        <div style="color: #FFD700; font-size: 1.8rem; cursor: pointer;" id="starRating">
-                            <i class="fa-regular fa-star star-rating" data-val="1"></i>
-                            <i class="fa-regular fa-star star-rating" data-val="2"></i>
-                            <i class="fa-regular fa-star star-rating" data-val="3"></i>
-                            <i class="fa-regular fa-star star-rating" data-val="4"></i>
-                            <i class="fa-regular fa-star star-rating" data-val="5"></i>
-                        </div>
-                        <input type="hidden" id="ratingValue" value="0" required>
-                    </div>
-                    <div style="margin-bottom: 25px;">
-                        <label class="text-navy font-weight-600" style="display: block; margin-bottom: 10px;">Your Review</label>
-                        <textarea id="reviewText" rows="5" placeholder="Share your experience working with Truvisory..." style="width: 100%; background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; color: var(--navy); font-family: inherit; resize: vertical;" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.1rem;">Submit Review</button>
-                </form>
-            </div>
-        </div>
-    </section>
-  </main>
-
-    <!-- MEGA FOOTER -->
-    <footer class="footer section-white border-top-light" style="padding-top: 60px; padding-bottom: 30px;">
+  <footer class="footer">
     <div class="container">
-      <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px;">
-        
-        <!-- Column 1 -->
-        <div class="footer-col">
-          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Quick Links</h4>
-          <ul style="list-style: none; padding: 0;">
-            <li class="mb-2"><a href="index.html" class="link-navy">Home</a></li>
-            <li class="mb-2"><a href="about.html" class="link-navy">About Us</a></li>
-            <li class="mb-2"><a href="services.html" class="link-navy">Services</a></li>
-            <li class="mb-2"><a href="why-truvisory.html" class="link-navy">Why Truvisory</a></li>
-            <li class="mb-2"><a href="testimonials.html" class="link-navy">Testimonials</a></li>
-            <li class="mb-2"><a href="contact.html" class="link-navy">Contact Us</a></li>
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo-text">TRUVISORY</span>
+          <p style="color: var(--text-muted); font-size: 0.875rem; max-width: 250px;">Premium financial advisory and corporate structuring for global enterprises.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Business Setup</a></li>
+            <li><a href="services.html">Accounting</a></li>
+            <li><a href="services.html">Tax & VAT</a></li>
           </ul>
         </div>
-        
-        <!-- Column 2 -->
-        <div class="footer-col">
-          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Services</h4>
-          <ul style="list-style: none; padding: 0;">
-            <li class="mb-2"><a href="#" class="link-navy">Business Setup</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Accounting & Bookkeeping</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Taxation</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Payroll</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Compliance</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Trademark & Patent</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Virtual CFO</a></li>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Legal</a></li>
           </ul>
         </div>
-        
-        <!-- Column 3 -->
-        <div class="footer-col">
-          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Countries</h4>
-          <ul style="list-style: none; padding: 0;">
-            <li class="mb-2"><a href="#" class="link-navy">India</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">UAE</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Singapore</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">UK</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Hong Kong</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">USA</a></li>
-          </ul>
-        </div>
-        
-        <!-- Column 4 -->
-        <div class="footer-col">
-          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Resources</h4>
-          <ul style="list-style: none; padding: 0;">
-            <li class="mb-2"><a href="#" class="link-navy">Featured Articles</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Business Guides</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Country Guides</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Compliance Updates</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Downloads</a></li>
-          </ul>
-        </div>
-        
-        <!-- Column 5 -->
-        <div class="footer-col">
-          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Contact</h4>
-          <ul style="list-style: none; padding: 0;">
-            <li class="mb-2">📞 <a href="tel:+919930426774" class="link-teal">+91 99304 26774</a></li>
-            <li class="mb-2">✉ <a href="mailto:truvisoryfinance@gmail.com" class="link-teal" style="word-break: break-all;">truvisoryfinance@gmail.com</a></li>
-            <li class="mb-2">📍 Mumbai, India</li>
-            <li class="mb-2">🕒 Mon - Fri, 9am - 6pm</li>
-          </ul>
-        </div>
-
-        <!-- Column 6 -->
-        <div class="footer-col">
-          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Legal Pages</h4>
-          <ul style="list-style: none; padding: 0;">
-            <li class="mb-2"><a href="#" class="link-navy">Privacy Policy</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Terms & Conditions</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Disclaimer</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Cookie Policy</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Refund Policy</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 7 -->
-        <div class="footer-col">
-          <h4 class="text-navy" style="font-size: 1.1rem; margin-bottom: 15px;">Social Links</h4>
-          <ul style="list-style: none; padding: 0;">
-            <li class="mb-2"><a href="#" class="link-navy">LinkedIn</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Facebook</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">Instagram</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">X (Twitter)</a></li>
-            <li class="mb-2"><a href="#" class="link-navy">YouTube</a></li>
-            <li class="mb-2"><a href="https://wa.me/919930426774?text=Hello%20Truvisory%20Financial%20Services,%20I%20would%20like%20to%20know%20more%20about%20your%20business%20advisory%20and%20financial%20services." class="link-navy" target="_blank">WhatsApp</a></li>
-          </ul>
-        </div>
-
       </div>
-      
-      <div class="footer-bottom mt-5 text-center" style="border-top: 1px solid var(--card-border); padding-top: 20px;">
-        <a href="index.html" class="logo footer-logo mb-3 d-inline-block">
-          <img src="assets/images/logo.png" alt="Truvisory Services" class="logo-img" style="height: 160px; max-height: none; width: auto; object-fit: contain; max-width: none;">
-        </a>
-        <p class="text-slate">© 2026 Truvisory Financial Services Pvt. Ltd. All rights reserved.</p>
+      <div class="footer-bottom">
+        &copy; 2024 TRUVISORY FINANCIAL SERVICES PVT. LTD. All rights reserved.
       </div>
     </div>
   </footer>
-    
-    <!-- Floating Widgets -->
-    <a href="https://wa.me/919930426774" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-    <a href="#" class="back-to-top" id="backToTopMega" aria-label="Back to top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
-    
-    <script>
-        // Back to top behavior
-        window.addEventListener('scroll', function() {
-            var btn = document.getElementById('backToTopMega');
-            if(btn) {
-                if (window.scrollY > 300) {
-                    btn.classList.add('visible');
-                } else {
-                    btn.classList.remove('visible');
-                }
-            }
-        });
-        document.getElementById('backToTopMega')?.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        });
-    </script>
 
-  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-chevron-up"></i>
-  </a>
-
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const stars = document.querySelectorAll('.star-rating');
-        const ratingValue = document.getElementById('ratingValue');
-        
-        stars.forEach(star => {
-            star.addEventListener('click', function() {
-                const val = parseInt(this.getAttribute('data-val'));
-                ratingValue.value = val;
-                
-                // Update stars visual
-                stars.forEach(s => {
-                    if (parseInt(s.getAttribute('data-val')) <= val) {
-                        s.classList.remove('fa-regular');
-                        s.classList.add('fa-solid');
-                    } else {
-                        s.classList.remove('fa-solid');
-                        s.classList.add('fa-regular');
-                    }
-                });
-            });
-        });
-
-        const reviewForm = document.getElementById('reviewForm');
-        if (reviewForm) {
-            reviewForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const name = document.getElementById('reviewerName').value;
-                const rating = parseInt(ratingValue.value) || 5;
-                const text = document.getElementById('reviewText').value;
-                
-                if (!name || !text) {
-                    alert('Please provide your name and a review.');
-                    return;
-                }
-                
-                const grid = document.getElementById('testimonialsGrid');
-                
-                // Remove the "No reviews yet" placeholder if it exists
-                const placeholder = grid.querySelector('h3.text-navy');
-                if (placeholder && placeholder.innerText === 'No reviews yet.') {
-                    grid.innerHTML = '';
-                }
-                
-                // Generate stars HTML
-                let starsHtml = '';
-                for (let i = 0; i < 5; i++) {
-                    if (i < rating) {
-                        starsHtml += '<i class="fa-solid fa-star" style="color: #FFD700;"></i>';
-                    } else {
-                        starsHtml += '<i class="fa-regular fa-star" style="color: #cbd5e1;"></i>';
-                    }
-                }
-                
-                // Create new card
-                const newCard = document.createElement('div');
-                newCard.className = 'glass-card fade-up';
-                newCard.style = 'padding: 40px; background: #ffffff; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-radius: 12px;';
-                newCard.innerHTML = `
-                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                        <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--navy); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; margin-right: 15px;">
-                            ${name.charAt(0).toUpperCase()}
-                        </div>
-                        <div>
-                            <h4 class="text-navy mb-0">${name}</h4>
-                            <div style="font-size: 0.9rem; margin-top: 5px;">
-                                ${starsHtml}
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-slate" style="line-height: 1.8; font-style: italic;">"${text}"</p>
-                `;
-                
-                // Append and animate
-                grid.appendChild(newCard);
-                setTimeout(() => newCard.classList.add('visible'), 50);
-                
-                // Reset form
-                reviewForm.reset();
-                ratingValue.value = 0;
-                stars.forEach(s => {
-                    s.classList.remove('fa-solid');
-                    s.classList.add('fa-regular');
-                });
-                
-                alert('Thank you for your review!');
-            });
-        }
-    });
-  </script>
 </body>
-
 </html>
