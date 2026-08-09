@@ -498,3 +498,19 @@ a {
 .header-btn:hover {
   background-color: var(--accent-gold-hover);
 }
+
+/* Trust Strip Formatting */
+.trust-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .trust-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
