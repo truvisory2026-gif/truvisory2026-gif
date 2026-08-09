@@ -1,38 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Truvisory Financial Services Pvt. Ltd. | Business Setup, Accounting, Compliance & Global Expansion</title>
-  <meta name="description" content="End-to-end business consulting firm helping startups and growing businesses with company incorporation, accounting, taxation, payroll, compliance, branding and international business expansion.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+import re
 
-  <header class="header">
-    <div class="container header-container">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" alt="Truvisory Services">
-      </a>
-      <nav class="desktop-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html" class="">About Us</a>
-        <a href="services.html" class="">Services</a>
-        <a href="countries.html" class="">Countries</a>
-        <a href="industries.html" class="">Industries</a>
-        <a href="insights.html" class="">Insights &amp; Resources</a>
-        <a href="success-stories.html" class="">Success Stories</a>
-        <a href="contact.html" class="">Contact</a>
-        <a href="seo-landing-pages.html" class="">SEO Landing Pages</a>
-      </nav>
-            <a href="https://calendly.com/truvisory2026/30min" class="header-btn desktop-only" target="_blank">Book Consultation</a>
-      <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
-    </div>
-  </header>
+ui_path = r'C:\Users\roopc\.gemini\antigravity\brain\c93a1649-f9d8-443c-9da6-d0a3b3a80bd0\scratch\rebuild_ui.py'
+with open(ui_path, 'r', encoding='utf-8') as f:
+    ui = f.read()
 
-  
-
+index_html = """
 <main>
   <!-- Hero Section -->
   <section class="hero">
@@ -268,91 +240,18 @@
     </div>
   </section>
 </main>
+"""
 
+# Replace index_main
+ui = re.sub(r'index_main = """\n<main>.*?</main>\n"""', f'index_main = """\n{index_html}\n"""', ui, flags=re.DOTALL)
 
+# Replace the create_html call for index.html to update SEO Title & Description
+old_create_index = "create_html('index.html', 'Truvisory Financial Services Pvt. Ltd. | Business Setup, Accounting, Compliance & Global Expansion', 'End-to-end business consulting firm helping startups and growing businesses with company incorporation, accounting, taxation, payroll, compliance, branding and international business expansion.', index_main)"
+new_create_index = "create_html('index.html', 'Truvisory Financial Services Pvt. Ltd. | Business Setup, Accounting, Compliance & Global Expansion', 'End-to-end business consulting firm helping startups and growing businesses with company incorporation, accounting, taxation, payroll, compliance, branding and international business expansion.', index_main)"
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <img src="assets/images/logo.png" alt="Truvisory" style="height: 40px; margin-bottom: 16px;">
-          <p style="color: var(--text-muted); font-size: 0.875rem; max-width: 250px;">Premium financial advisory and corporate structuring for global enterprises.</p>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Business Setup</a></li>
-            <li><a href="services.html">Accounting</a></li>
-            <li><a href="services.html">Tax & VAT</a></li>
-            <li><a href="services.html">Compliance</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="success-stories.html">Success Stories</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="insights.html">Insights &amp; Resources</a></li>
-            <li><a href="countries.html">Countries</a></li>
-            <li><a href="industries.html">Industries</a></li>
-            <li><a href="seo-landing-pages.html">SEO Landing Pages</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2024 TRUVISORY FINANCIAL SERVICES PVT. LTD. All rights reserved.
-      </div>
-    </div>
-  </footer>
+ui = ui.replace(old_create_index, new_create_index)
 
+with open(ui_path, 'w', encoding='utf-8') as f:
+    f.write(ui)
 
-  <!-- Mobile Navigation Drawer -->
-  <div class="mobile-nav" id="mobileNav">
-    <div class="mobile-nav-header">
-      <img src="assets/images/logo.png" alt="Truvisory Services" style="height: 40px;">
-      <button class="close-mobile-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="mobile-nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html" class="">About Us</a>
-        <a href="services.html" class="">Services</a>
-        <a href="countries.html" class="">Countries</a>
-        <a href="industries.html" class="">Industries</a>
-        <a href="insights.html" class="">Insights &amp; Resources</a>
-        <a href="success-stories.html" class="">Success Stories</a>
-        <a href="contact.html" class="">Contact</a>
-        <a href="seo-landing-pages.html" class="">SEO Landing Pages</a>
-    </div>
-  </div>
-  
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/919930426774" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const menuBtn = document.querySelector('.mobile-menu-btn');
-      const closeBtn = document.getElementById('closeBtn');
-      const mobileNav = document.getElementById('mobileNav');
-      
-      if (menuBtn && mobileNav && closeBtn) {
-        menuBtn.addEventListener('click', () => {
-          mobileNav.classList.add('active');
-        });
-        
-        closeBtn.addEventListener('click', () => {
-          mobileNav.classList.remove('active');
-        });
-      }
-    });
-  </script>
-</body>
-</html>
+print("Home page content fully updated.")
