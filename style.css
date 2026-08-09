@@ -499,6 +499,7 @@ a {
   background-color: var(--accent-gold-hover);
 }
 
+
 /* Trust Strip Formatting */
 .trust-strip {
   display: flex;
@@ -509,8 +510,26 @@ a {
 }
 @media (max-width: 768px) {
   .trust-strip {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
+    background-color: #f8f9fa;
+    border: 1px solid var(--border-medium);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .trust-strip span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 8px;
+  }
+  .trust-strip span:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
