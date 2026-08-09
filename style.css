@@ -140,12 +140,19 @@ a {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  width: 165px;
+  height: 70px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .logo img {
-  max-width: 160px;
-  max-height: 40px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  transform: scale(1.8);
+  transform-origin: center center;
 }
 
 .desktop-nav {
