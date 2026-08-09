@@ -141,8 +141,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 165px;
-  height: 70px;
+  width: 170px;
+  height: 60px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -151,8 +151,6 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform: scale(1.8);
-  transform-origin: center center;
 }
 
 .desktop-nav {
