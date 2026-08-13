@@ -29,8 +29,8 @@ body {
   font-family: var(--font-sans);
   color: var(--text-muted);
   background-color: var(--bg-cream); /* Overall background is cream */
-  line-height: 1.6;
-  font-size: 16px;
+  line-height: 1.65;
+  font-size: 15px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -39,21 +39,25 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-main);
   font-weight: 600;
   line-height: 1.2;
+
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 3.5rem;
+  line-height: 1.15;
+  font-size: 2.75rem;
   letter-spacing: -0.02em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 2.5rem;
+  line-height: 1.2;
+  font-size: 2.125rem;
   letter-spacing: -0.01em;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -123,7 +127,7 @@ a {
 
 /* Header */
 .header {
-  height: 70px;
+  height: 66px;
   background-color: #FFFFFF;
   position: static;
   width: 100%;
@@ -138,11 +142,11 @@ a {
 }
 
 .logo {
+  width: 215px;
+  height: 64px; /* Utilize almost full 66px header height */
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 170px;
-  height: 60px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -155,7 +159,7 @@ a {
 
 .desktop-nav {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -167,6 +171,7 @@ a {
   position: relative;
   padding-bottom: 4px;
   white-space: nowrap;
+  line-height: 1;
 }
 
 .desktop-nav a:hover, .desktop-nav a.active {
@@ -205,6 +210,7 @@ a {
 }
 
 .hero-content h1 {
+  line-height: 1.15;
   margin-bottom: 24px;
 }
 
@@ -289,9 +295,16 @@ a {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   gap: 64px;
   margin-bottom: 64px;
+  align-items: start;
+}
+
+.footer-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-logo-text {
@@ -304,16 +317,19 @@ a {
 
 .footer h4 {
   font-size: 0.875rem;
-  color: #92400E; /* Gold/brown hue for footer titles */
+  color: #92400E;
+  margin-top: 0;
   margin-bottom: 24px;
 }
 
 .footer ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer ul li {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 }
 
 .footer ul li a {
@@ -347,21 +363,46 @@ a {
 
 /* Mobile */
 @media (max-width: 1024px) {
-  h1 { font-size: 2.75rem; }
-  h2 { font-size: 2rem; }
+  h1 {
+  line-height: 1.15; font-size: 2.75rem; }
+  h2 {
+  line-height: 1.2; font-size: 2rem; }
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 64px;
+  align-items: start;
+}
+
+.footer-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
   .desktop-nav {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   flex-wrap: nowrap;
 }
 }
 
 @media (max-width: 768px) {
-  .footer-grid { grid-template-columns: 1fr; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+.footer-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 }
 
 
@@ -480,7 +521,7 @@ a {
 .header-btn {
   height: 34px;
   width: 125px;
-  padding: 0 10px;
+  padding: 0 9px;
   border-radius: 5px;
   font-size: 11.5px;
   font-weight: 600;
@@ -567,4 +608,46 @@ a {
     border-bottom: none;
     padding-bottom: 0;
   }
+}
+
+.footer-logo-container {
+  width: 190px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.footer-logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .footer-logo-container {
+    width: 160px;
+    height: 50px;
+  }
+}
+
+
+/* Advanced Mobile Polish */
+@media (max-width: 768px) {
+  h1 { font-size: 2.25rem; line-height: 1.2; }
+  h2 { font-size: 1.75rem; line-height: 1.25; }
+  h3 { font-size: 1.25rem; }
+  
+  .section { padding: 48px 0; }
+  .hero { padding: 48px 0; }
+  
+  .hero-image-container { height: 350px; }
+  
+  .hero-ctas { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+  
+  .service-card { padding: 24px; }
 }
